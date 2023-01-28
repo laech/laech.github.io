@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="/css/default.css" />
+</head>
+<body><div id="nav">
+  <p>
+    <a href="/">home</a> | <a href="/index.xml">rss</a>
+  </p>
+</div>
+<div id="content">
+<h1 class="title">When Black Magic Fails Silently</h1>
+<div><p>Sometimes you run into black magic in a code base, the sort of thing
+that works but you don&rsquo;t really know why, but you can accept it and
+move on, because it all just work.</p>
+<p>Except when it shoots you in the foot to remind you it doesn&rsquo;t always
+work as advertised. If you are luckly, you&rsquo;ll get a big error
+screaming in your face, but often you are not that luckly, it breaks
+things silently and carries on.</p>
+<p>Take Spring for example, a popular framework in the Java world. Say
+you want to run some code within a database transaction, you often
+just annotate the method with <code>@Transactional</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  <span style="color:#3c5d5d;font-weight:bold">@Service</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">UserService</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@Transactional</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">updateDetails</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#998;font-style:italic">/*...*/</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>When <code>updateDetails()</code> is call by some other class, it will run
+magically inside a transaction. But if it&rsquo;s calls from some method
+within the same class, it will silently run the method without a
+transaction (this is the default behaviour unless you change it),
+resulting in bad data integrity - one of the worst things you would
+want to have in a production database, especially if your system deals
+with financial transactions.</p>
+<p>Another example is that, you may want to perform some common
+validations for your service parameters:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@Service</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">UserService</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">updateName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3c5d5d;font-weight:bold">@NotEmpty</span> String name<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#998;font-style:italic">/*...*/</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>This won&rsquo;t work because you forgot to annotate the class with
+<code>@Validated</code> (which is easily missed if your class already has half a
+dozen annotations), so again it will silently do nothing and the
+method will happy accept invalid input, or worse, causing security
+issues.</p>
+<p>Yet another example, you want to listen to certain events and want to
+perform some action after the associated database transaction commits
+successfully:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">UserEventListener</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@TransactionalEventListener</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">onEvent</span><span style="color:#000;font-weight:bold">(</span>UserUpdated event<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#998;font-style:italic">/*...*/</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>This works until you want to write to the database within the event
+method. Your writes will appear to return successfully, but in fact
+they are all dropped silently behind the scence, and this is a
+documented expected behaviour. Shocking.</p>
+</div>
+<p class="date">2023-01-27</p>
+
+        </div></body>
+</html>

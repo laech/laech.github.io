@@ -1,0 +1,46 @@
+body {
+  width: 680px;
+  max-width: 95%;
+  margin: auto;
+  padding-bottom: 3rem;
+  font-size: 1.25rem;
+}
+
+.title {
+  text-align: left;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+pre code {
+  padding-left: 1.6em;
+  padding-right: 1.6em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  line-height: 138%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 138%;
+}
+
+ul.posts {
+  line-height: 180%;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.posts .date {
+  font-size: 1rem;
+  margin-right: .5em;
+}
+
+p.date {
+  margin-top: 3rem;
+  margin-right: 1rem;
+  text-align: right;
+}

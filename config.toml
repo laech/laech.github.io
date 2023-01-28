@@ -1,0 +1,10 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Note to Self'
+theme = 'default'
+
+disableKinds = ["taxonomy", "term"]
+
+[markup]
+  [markup.highlight]
+    style = 'github'
