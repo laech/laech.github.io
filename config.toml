@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Note to Self'
 theme = 'default'
 uglyURLs = true
-disableKinds = ["taxonomy", "term"]
+disableKinds = ["taxonomy", "term", "sitemap"]
 
 [markup]
   [markup.highlight]
