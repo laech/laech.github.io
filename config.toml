@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://d25yyb6maftl28.cloudfront.net/' # TODO change
 languageCode = 'en-us'
 title = 'Note to Self'
 theme = 'default'
@@ -12,9 +12,5 @@ disableKinds = ["taxonomy", "term", "sitemap"]
 [deployment]
   [deployment.targets]
   name = "aws"
-  # URL = "s3://blog-20230128074548221000000001?region=us-east-1"
-  # cloudFrontDistributionID = "E2WSEKHQFF1FF2"
-
-  [deployment.matchers]
-  pattern = "^sitemap\\.xml$"
-  contentType = "application/xml"
+  URL = "s3://blog-lnsfn?region=us-east-1"
+  # cloudFrontDistributionID = "E3ONZ7WE6FOB4H"

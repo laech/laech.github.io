@@ -45,7 +45,7 @@ service, turning it into a pipeline (<code>Stream</code> is lazy sequence):</p>
 a pipeline. Clients will see the results incrementally as they
 complete, no need to wait for everything to be processed first. And this
 keeps data flowing continuously, avoiding idle timeouts.</p>
-<p>But then you remembered this is no good as it could cause <a href="http://example.org/tcp-deadlock.html">TCP
+<p>But then you remembered this is no good as it could cause <a href="https://d25yyb6maftl28.cloudfront.net/tcp-deadlock.html">TCP
 Deadlocks</a>.</p>
 <p>Now what other options are there? If a full pipeline is no good, maybe
 a partial pipeline would be okay?</p>

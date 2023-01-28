@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -o errexit
+
+AWS_PROFILE=blog hugo deploy
