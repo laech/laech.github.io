@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/when-black-magic-fails-silently/</loc>
+    <loc>http://example.org/when-black-magic-fails-silently.html</loc>
     <lastmod>2023-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/dependency-injection-is-parameter-passing/</loc>
+    <loc>http://example.org/dependency-injection-is-parameter-passing.html</loc>
     <lastmod>2019-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/pipeline-from-input-or-pipeline-to-output/</loc>
+    <loc>http://example.org/pipeline-from-input-or-pipeline-to-output.html</loc>
     <lastmod>2019-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tcp-deadlock/</loc>
+    <loc>http://example.org/tcp-deadlock.html</loc>
     <lastmod>2019-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/the-principle-of-least-astonishment-and-naming/</loc>
+    <loc>http://example.org/the-principle-of-least-astonishment-and-naming.html</loc>
     <lastmod>2019-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/mutable-constants/</loc>
+    <loc>http://example.org/mutable-constants.html</loc>
     <lastmod>2019-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://example.org/</loc>

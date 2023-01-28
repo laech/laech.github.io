@@ -8,30 +8,30 @@
     <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>When Black Magic Fails Silently</title>
-      <link>http://example.org/when-black-magic-fails-silently/</link>
+      <link>http://example.org/when-black-magic-fails-silently.html</link>
       <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/when-black-magic-fails-silently/</guid>
+      <guid>http://example.org/when-black-magic-fails-silently.html</guid>
       <description>Sometimes you run into black magic in a code base, the sort of thing that works but you don&amp;rsquo;t really know why, but you can accept it and move on, because it all just work.
 Except when it shoots you in the foot to remind you it doesn&amp;rsquo;t always work as advertised. If you are luckly, you&amp;rsquo;ll get a big error screaming in your face, but often you are not that luckly, it breaks things silently and carries on.</description>
     </item>
     
     <item>
       <title>Dependency Injection is Parameter Passing</title>
-      <link>http://example.org/dependency-injection-is-parameter-passing/</link>
+      <link>http://example.org/dependency-injection-is-parameter-passing.html</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/dependency-injection-is-parameter-passing/</guid>
+      <guid>http://example.org/dependency-injection-is-parameter-passing.html</guid>
       <description>Dependency injection means that instead of a function reaching out to get its dependencies, it accepts the dependencies as parameters instead. A dependency may be an external service, or something that produces observable side effects, etc.
 // Before static void isBedTime() { var clock = Clock.getSystemClock(); var time = clock.now(); return time.hour() &amp;gt;= 23; } // After static void isBedTime(Clock clock) { var time = clock.now(); return time.hour() &amp;gt;= 23; } This make the function dumb (in a good way), and the dependencies clear to the caller.</description>
     </item>
     
     <item>
       <title>Pipeline from Input, or Pipeline to Output?</title>
-      <link>http://example.org/pipeline-from-input-or-pipeline-to-output/</link>
+      <link>http://example.org/pipeline-from-input-or-pipeline-to-output.html</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/pipeline-from-input-or-pipeline-to-output/</guid>
+      <guid>http://example.org/pipeline-from-input-or-pipeline-to-output.html</guid>
       <description>Let say you are going to implement an HTTP service, we can post it a list of actions, it will perform those actions and return a list of results.
 The first version is simple, read the actions, process them, then write the results.
 List&amp;lt;Action&amp;gt; actions = readAll(request); List&amp;lt;Result&amp;gt; results = invokeAll(actions); results.forEach(this::write); Everything seems to work fine but after a while clients are starting to get timeouts.
@@ -40,20 +40,20 @@ It turns out that some actions take longer time to complete, say about 1 second,
     
     <item>
       <title>TCP Deadlock</title>
-      <link>http://example.org/tcp-deadlock/</link>
+      <link>http://example.org/tcp-deadlock.html</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tcp-deadlock/</guid>
+      <guid>http://example.org/tcp-deadlock.html</guid>
       <description>Let&amp;rsquo;s imagine an echo server implementation, where the server simply takes the request input stream, copies the bytes to the response output stream.
 Let&amp;rsquo;s say a client starts sending bytes to the server, and the server starts writing the bytes out as soon as they come in, it&amp;rsquo;s pretty nice that the server doesn&amp;rsquo;t need to load the whole request first, which means the client can see the response quickly if it wishes to.</description>
     </item>
     
     <item>
       <title>The Principle of Least Astonishment, and Naming</title>
-      <link>http://example.org/the-principle-of-least-astonishment-and-naming/</link>
+      <link>http://example.org/the-principle-of-least-astonishment-and-naming.html</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/the-principle-of-least-astonishment-and-naming/</guid>
+      <guid>http://example.org/the-principle-of-least-astonishment-and-naming.html</guid>
       <description>The Principle of Least Astonishment states that code should behave in expected ways without hidden surprises. The following is an example of how improperly named things will introduce bugs into systems.
 Given a list of players, each player has multiple games, we want to build a map from game IDs to game names. We could do so using a Map and loops Java:
 Map&amp;lt;Integer, String&amp;gt; games = ...; for (var player : players) { for (var game : player.</description>
@@ -61,10 +61,10 @@ Map&amp;lt;Integer, String&amp;gt; games = ...; for (var player : players) { for
     
     <item>
       <title>Mutable Constants</title>
-      <link>http://example.org/mutable-constants/</link>
+      <link>http://example.org/mutable-constants.html</link>
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/mutable-constants/</guid>
+      <guid>http://example.org/mutable-constants.html</guid>
       <description>Mutable constants are essentially constants initialized from mutable variables.
 For example, a constant in code but initialized from an environment variable, which can be mutated before the constant is initialized to affect it&amp;rsquo;s value:
 static final Language LANG = Language.of(getEnv(&amp;#34;LANG&amp;#34;)); Another example, this time it isn&amp;rsquo;t a constant but it&amp;rsquo;s intended to be used like a constant after it&amp;rsquo;s initial value is set by some annotation processing library:

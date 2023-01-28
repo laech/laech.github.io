@@ -2,9 +2,19 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Note to Self'
 theme = 'default'
-
+uglyURLs = true
 disableKinds = ["taxonomy", "term"]
 
 [markup]
   [markup.highlight]
-    style = 'github'
+  style = 'github'
+
+[deployment]
+  [deployment.targets]
+  name = "aws"
+  # URL = "s3://blog-20230128074548221000000001?region=us-east-1"
+  # cloudFrontDistributionID = "E2WSEKHQFF1FF2"
+
+  [deployment.matchers]
+  pattern = "^sitemap\\.xml$"
+  contentType = "application/xml"

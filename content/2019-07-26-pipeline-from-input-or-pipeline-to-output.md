@@ -53,7 +53,7 @@ complete, no need to wait for everything to be processed first. And this
 keeps data flowing continuously, avoiding idle timeouts.
 
 But then you remembered this is no good as it could cause [TCP
-Deadlocks](../tcp-deadlock).
+Deadlocks]({{< ref "2019-07-25-tcp-deadlock" >}}).
 
 Now what other options are there? If a full pipeline is no good, maybe
 a partial pipeline would be okay?
