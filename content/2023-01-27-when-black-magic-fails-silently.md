@@ -47,7 +47,7 @@ class UserService {
 This won't work because you forgot to annotate the class with
 `@Validated` (which is easily missed if your class already has half a
 dozen annotations), so again it will silently do nothing and the
-method will happy accept invalid input, or worse, causing security
+method will happyly accept invalid input, or worse, causing security
 issues.
 
 Yet another example, you want to listen to certain events and want to
