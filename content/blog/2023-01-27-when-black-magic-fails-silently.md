@@ -2,7 +2,7 @@
 title: When Black Magic Fails Silently
 date: 2023-01-27
 draft: false
-slug: when-black-magic-fails-silently
+slug: 2023/01/27/when-black-magic-fails-silently
 ---
 
 Sometimes you run into black magic in a code base, the sort of thing

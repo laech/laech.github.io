@@ -1,7 +1,7 @@
 {{ define "main" }}
 <h1 class="title">{{ .Site.Title }}</h1>
 <ul class="posts">
-  {{ range .Pages.ByPublishDate.Reverse }}
+  {{ range (where .Site.RegularPages "Type" "blog") }}
   <li>
     <span class="date">{{ .Date.Format "2006-01-02" }}</span>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>

@@ -2,7 +2,7 @@
 title: TCP Deadlock
 date: 2019-07-25
 draft: false
-slug: tcp-deadlock
+slug: 2019/07/25/tcp-deadlock
 ---
 
 Let's imagine an echo server implementation, where the server simply

@@ -2,7 +2,7 @@
 title: Pipeline from Input, or Pipeline to Output?
 date: 2019-07-26
 draft: false
-slug: pipeline-from-input-or-pipeline-to-output
+slug: 2019/07/26/pipeline-from-input-or-pipeline-to-output
 ---
 
 Let say you are going to implement an HTTP service, we can post it a
