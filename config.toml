@@ -1,4 +1,4 @@
-baseURL = 'https://d25yyb6maftl28.cloudfront.net/' # TODO change
+baseURL = 'https://lae.nz'
 languageCode = 'en-us'
 title = 'Note to Self'
 theme = 'default'
@@ -11,9 +11,3 @@ disableKinds = ["taxonomy", "term", "sitemap"]
 [outputs]
 home = ["html", "rss"]
 section = ["html"]
-
-[deployment]
-  [deployment.targets]
-  name = "aws"
-  URL = "s3://blog-lnsfn?region=us-east-1"
-  cloudFrontDistributionID = "E3ONZ7WE6FOB4H"
