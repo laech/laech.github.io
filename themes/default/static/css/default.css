@@ -20,12 +20,15 @@ p {
   line-height: 138%;
 }
 
-table.posts {
-  line-height: 180%;
+table.posts td {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
 }
 
 table.posts .date {
   padding-right: 0.5em;
+  text-wrap: nowrap;
+  vertical-align: top;
 }
 
 p.date {
