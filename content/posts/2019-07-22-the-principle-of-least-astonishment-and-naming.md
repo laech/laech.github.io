@@ -14,28 +14,28 @@ build a map from game IDs to game names. We could do so using a `Map`
 and loops Java:
 
 ```java
-  Map<Integer, String> games = ...;
-  for (var player : players) {
-    for (var game : player.games()) {
-      games.put(
-        game.id(),
-        game.name()
-      );
-    }
+Map<Integer, String> games = ...;
+for (var player : players) {
+  for (var game : player.games()) {
+    games.put(
+      game.id(),
+      game.name()
+    );
   }
+}
 ```
 
 We could also do it using the stream API with the `toMap` collector:
 
 ```java
-  Map<Integer, String> games =
-    players
-      .stream()
-      .flatMap(Player::games)
-      .collect(toMap(
-        Game::id,
-        Game::name
-      ));
+Map<Integer, String> games =
+  players
+    .stream()
+    .flatMap(Player::games)
+    .collect(toMap(
+      Game::id,
+      Game::name
+    ));
 ```
 
 Both seems reasonable and clear at first.

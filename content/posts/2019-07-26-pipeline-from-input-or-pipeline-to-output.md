@@ -13,13 +13,13 @@ The first version is simple, read the actions, process them, then
 write the results.
 
 ```java
-  List<Action> actions =
-    readAll(request);
+List<Action> actions =
+  readAll(request);
 
-  List<Result> results =
-    invokeAll(actions);
+List<Result> results =
+  invokeAll(actions);
 
-  results.forEach(this::write);
+results.forEach(this::write);
 ```
 
 Everything seems to work fine but after a while clients are starting
@@ -38,13 +38,13 @@ Apart from increasing the client timeout, you decided to improve the
 service, turning it into a pipeline (`Stream` is lazy sequence):
 
 ```java
-  Stream<Action> actions =
-    read(request);
+Stream<Action> actions =
+  read(request);
 
-  Stream<Result> results =
-    actions.map(this::invoke);
+Stream<Result> results =
+  actions.map(this::invoke);
 
-  results.forEach(this::write);
+results.forEach(this::write);
 ```
 
 It will now read, invoke, output each of the actions one at a time as
@@ -63,15 +63,15 @@ collect all the results into a list in memory, once complete, write
 them out.
 
 ```java
-  Stream<Action> actions =
-    read(request);
+Stream<Action> actions =
+  read(request);
 
-  List<Result> results =
-    actions
-      .map(this::invoke)
-      .collect(toList());
+List<Result> results =
+  actions
+    .map(this::invoke)
+    .collect(toList());
 
-  results.forEach(this::write);
+results.forEach(this::write);
 ```
 
 This means while the client sends the list of actions, the service
@@ -94,15 +94,15 @@ How about another option, if instead all the actions are read into a
 list, then pipeline from processing to output?
 
 ```java
-  List<Action> actions =
-    readAll(request);
+List<Action> actions =
+  readAll(request);
 
-  Stream<Result> results =
-    actions
-      .stream()
-      .map(this::invoke);
+Stream<Result> results =
+  actions
+    .stream()
+    .map(this::invoke);
 
-  results.forEach(this::write);
+results.forEach(this::write);
 ```
 
 With this, the service would finish loading all actions into memory

@@ -21,11 +21,13 @@ silently and carries on.</p>
 <p>Take Spring for example, a popular framework in the Java world. Say
 you want to run some code within a database transaction, you often
 just annotate the method with <code>@Transactional</code>:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  <span style="color:#3c5d5d;font-weight:bold">@Service</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">UserService</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@Transactional</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">updateDetails</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#998;font-style:italic">/*...*/</span> <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@Service</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">UserService</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3c5d5d;font-weight:bold">@Transactional</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">updateDetails</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><p>When <code>updateDetails()</code> is call by some other class, it will run
 magically inside a transaction. But if it&rsquo;s calls from some method
 within the same class, it will silently run the method without a
@@ -37,7 +39,9 @@ with financial transactions.</p>
 validations for your service parameters:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@Service</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">UserService</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">updateName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3c5d5d;font-weight:bold">@NotEmpty</span> String name<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#998;font-style:italic">/*...*/</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">updateName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3c5d5d;font-weight:bold">@NotEmpty</span> String name<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><p>This won&rsquo;t work because you forgot to annotate the class with
 <code>@Validated</code> (which is easily missed if your class already has half a
@@ -47,10 +51,12 @@ issues.</p>
 <p>Yet another example, you want to listen to certain events and want to
 perform some action after the associated database transaction commits
 successfully:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">UserEventListener</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#3c5d5d;font-weight:bold">@TransactionalEventListener</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">onEvent</span><span style="color:#000;font-weight:bold">(</span>UserUpdated event<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#998;font-style:italic">/*...*/</span> <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">UserEventListener</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3c5d5d;font-weight:bold">@TransactionalEventListener</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">onEvent</span><span style="color:#000;font-weight:bold">(</span>UserUpdated event<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><p>This works until you want to write to the database within the event
 method. Your writes will appear to return successfully, but in fact
 they are all dropped silently behind the scenes, and this is a

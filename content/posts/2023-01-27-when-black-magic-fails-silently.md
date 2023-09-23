@@ -19,11 +19,13 @@ you want to run some code within a database transaction, you often
 just annotate the method with `@Transactional`:
 
 ```java
-  @Service
-  class UserService {
-    @Transactional
-    void updateDetails() { /*...*/ }
+@Service
+class UserService {
+  @Transactional
+  void updateDetails() {
+    // ...
   }
+}
 ```
 
 When `updateDetails()` is call by some other class, it will run
@@ -40,7 +42,9 @@ validations for your service parameters:
 ```java
 @Service
 class UserService {
-  void updateName(@NotEmpty String name) { /*...*/ }
+  void updateName(@NotEmpty String name) {
+    // ...
+  }
 }
 ```
 
@@ -55,10 +59,12 @@ perform some action after the associated database transaction commits
 successfully:
 
 ```java
-  class UserEventListener {
-    @TransactionalEventListener
-    void onEvent(UserUpdated event) { /*...*/ }
+class UserEventListener {
+  @TransactionalEventListener
+  void onEvent(UserUpdated event) {
+    // ...
   }
+}
 ```
 
 This works until you want to write to the database within the event

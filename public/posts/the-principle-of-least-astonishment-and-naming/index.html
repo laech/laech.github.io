@@ -17,24 +17,24 @@ how improperly named things will introduce bugs into systems.</p>
 <p>Given a list of players, each player has multiple games, we want to
 build a map from game IDs to game names. We could do so using a <code>Map</code>
 and loops Java:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  Map<span style="color:#000;font-weight:bold">&lt;</span>Integer<span style="color:#000;font-weight:bold">,</span> String<span style="color:#000;font-weight:bold">&gt;</span> games <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">...;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span>var player <span style="color:#000;font-weight:bold">:</span> players<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span>var game <span style="color:#000;font-weight:bold">:</span> player<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">games</span><span style="color:#000;font-weight:bold">())</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>      games<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">put</span><span style="color:#000;font-weight:bold">(</span>
-</span></span><span style="display:flex;"><span>        game<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">id</span><span style="color:#000;font-weight:bold">(),</span>
-</span></span><span style="display:flex;"><span>        game<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">name</span><span style="color:#000;font-weight:bold">()</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#000;font-weight:bold">&lt;</span>Integer<span style="color:#000;font-weight:bold">,</span> String<span style="color:#000;font-weight:bold">&gt;</span> games <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">...;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span>var player <span style="color:#000;font-weight:bold">:</span> players<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span>var game <span style="color:#000;font-weight:bold">:</span> player<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">games</span><span style="color:#000;font-weight:bold">())</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    games<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">put</span><span style="color:#000;font-weight:bold">(</span>
+</span></span><span style="display:flex;"><span>      game<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">id</span><span style="color:#000;font-weight:bold">(),</span>
+</span></span><span style="display:flex;"><span>      game<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">name</span><span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><p>We could also do it using the stream API with the <code>toMap</code> collector:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  Map<span style="color:#000;font-weight:bold">&lt;</span>Integer<span style="color:#000;font-weight:bold">,</span> String<span style="color:#000;font-weight:bold">&gt;</span> games <span style="color:#000;font-weight:bold">=</span>
-</span></span><span style="display:flex;"><span>    players
-</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">stream</span><span style="color:#000;font-weight:bold">()</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">flatMap</span><span style="color:#000;font-weight:bold">(</span>Player<span style="color:#000;font-weight:bold">::</span>games<span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">collect</span><span style="color:#000;font-weight:bold">(</span>toMap<span style="color:#000;font-weight:bold">(</span>
-</span></span><span style="display:flex;"><span>        Game<span style="color:#000;font-weight:bold">::</span>id<span style="color:#000;font-weight:bold">,</span>
-</span></span><span style="display:flex;"><span>        Game<span style="color:#000;font-weight:bold">::</span>name
-</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">));</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#000;font-weight:bold">&lt;</span>Integer<span style="color:#000;font-weight:bold">,</span> String<span style="color:#000;font-weight:bold">&gt;</span> games <span style="color:#000;font-weight:bold">=</span>
+</span></span><span style="display:flex;"><span>  players
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">stream</span><span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">flatMap</span><span style="color:#000;font-weight:bold">(</span>Player<span style="color:#000;font-weight:bold">::</span>games<span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">collect</span><span style="color:#000;font-weight:bold">(</span>toMap<span style="color:#000;font-weight:bold">(</span>
+</span></span><span style="display:flex;"><span>      Game<span style="color:#000;font-weight:bold">::</span>id<span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>      Game<span style="color:#000;font-weight:bold">::</span>name
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">));</span>
 </span></span></code></pre></div><p>Both seems reasonable and clear at first.</p>
 <p>A <code>Map</code> in Java doesn&rsquo;t contain duplicates, when putting a key value
 into a map it will override existing mapping that has the same key,

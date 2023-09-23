@@ -16,13 +16,13 @@ list of actions, it will perform those actions and return a list of
 results.</p>
 <p>The first version is simple, read the actions, process them, then
 write the results.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  List<span style="color:#000;font-weight:bold">&lt;</span>Action<span style="color:#000;font-weight:bold">&gt;</span> actions <span style="color:#000;font-weight:bold">=</span>
-</span></span><span style="display:flex;"><span>    readAll<span style="color:#000;font-weight:bold">(</span>request<span style="color:#000;font-weight:bold">);</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#000;font-weight:bold">&lt;</span>Action<span style="color:#000;font-weight:bold">&gt;</span> actions <span style="color:#000;font-weight:bold">=</span>
+</span></span><span style="display:flex;"><span>  readAll<span style="color:#000;font-weight:bold">(</span>request<span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  List<span style="color:#000;font-weight:bold">&lt;</span>Result<span style="color:#000;font-weight:bold">&gt;</span> results <span style="color:#000;font-weight:bold">=</span>
-</span></span><span style="display:flex;"><span>    invokeAll<span style="color:#000;font-weight:bold">(</span>actions<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>List<span style="color:#000;font-weight:bold">&lt;</span>Result<span style="color:#000;font-weight:bold">&gt;</span> results <span style="color:#000;font-weight:bold">=</span>
+</span></span><span style="display:flex;"><span>  invokeAll<span style="color:#000;font-weight:bold">(</span>actions<span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  results<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">forEach</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>write<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>results<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">forEach</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>write<span style="color:#000;font-weight:bold">);</span>
 </span></span></code></pre></div><p>Everything seems to work fine but after a while clients are starting
 to get timeouts.</p>
 <p>It turns out that some actions take longer time to complete, say about
@@ -35,13 +35,13 @@ response. And because the client has set its read timeout to be less
 than that, it timed out.</p>
 <p>Apart from increasing the client timeout, you decided to improve the
 service, turning it into a pipeline (<code>Stream</code> is lazy sequence):</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  Stream<span style="color:#000;font-weight:bold">&lt;</span>Action<span style="color:#000;font-weight:bold">&gt;</span> actions <span style="color:#000;font-weight:bold">=</span>
-</span></span><span style="display:flex;"><span>    read<span style="color:#000;font-weight:bold">(</span>request<span style="color:#000;font-weight:bold">);</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Stream<span style="color:#000;font-weight:bold">&lt;</span>Action<span style="color:#000;font-weight:bold">&gt;</span> actions <span style="color:#000;font-weight:bold">=</span>
+</span></span><span style="display:flex;"><span>  read<span style="color:#000;font-weight:bold">(</span>request<span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  Stream<span style="color:#000;font-weight:bold">&lt;</span>Result<span style="color:#000;font-weight:bold">&gt;</span> results <span style="color:#000;font-weight:bold">=</span>
-</span></span><span style="display:flex;"><span>    actions<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">map</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>invoke<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>Stream<span style="color:#000;font-weight:bold">&lt;</span>Result<span style="color:#000;font-weight:bold">&gt;</span> results <span style="color:#000;font-weight:bold">=</span>
+</span></span><span style="display:flex;"><span>  actions<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">map</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>invoke<span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  results<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">forEach</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>write<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>results<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">forEach</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>write<span style="color:#000;font-weight:bold">);</span>
 </span></span></code></pre></div><p>It will now read, invoke, output each of the actions one at a time as
 a pipeline. Clients will see the results incrementally as they
 complete, no need to wait for everything to be processed first. And this
@@ -53,15 +53,15 @@ a partial pipeline would be okay?</p>
 <p>For the next option, the service can pipeline from the input, but
 collect all the results into a list in memory, once complete, write
 them out.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  Stream<span style="color:#000;font-weight:bold">&lt;</span>Action<span style="color:#000;font-weight:bold">&gt;</span> actions <span style="color:#000;font-weight:bold">=</span>
-</span></span><span style="display:flex;"><span>    read<span style="color:#000;font-weight:bold">(</span>request<span style="color:#000;font-weight:bold">);</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Stream<span style="color:#000;font-weight:bold">&lt;</span>Action<span style="color:#000;font-weight:bold">&gt;</span> actions <span style="color:#000;font-weight:bold">=</span>
+</span></span><span style="display:flex;"><span>  read<span style="color:#000;font-weight:bold">(</span>request<span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  List<span style="color:#000;font-weight:bold">&lt;</span>Result<span style="color:#000;font-weight:bold">&gt;</span> results <span style="color:#000;font-weight:bold">=</span>
-</span></span><span style="display:flex;"><span>    actions
-</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">map</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>invoke<span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">collect</span><span style="color:#000;font-weight:bold">(</span>toList<span style="color:#000;font-weight:bold">());</span>
+</span></span><span style="display:flex;"><span>List<span style="color:#000;font-weight:bold">&lt;</span>Result<span style="color:#000;font-weight:bold">&gt;</span> results <span style="color:#000;font-weight:bold">=</span>
+</span></span><span style="display:flex;"><span>  actions
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">map</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>invoke<span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">collect</span><span style="color:#000;font-weight:bold">(</span>toList<span style="color:#000;font-weight:bold">());</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  results<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">forEach</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>write<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>results<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">forEach</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>write<span style="color:#000;font-weight:bold">);</span>
 </span></span></code></pre></div><p>This means while the client sends the list of actions, the service
 reads and processes the actions one at a time, when the service can&rsquo;t
 read fast enough because it encounters slow actions, TCP applies back
@@ -78,15 +78,15 @@ compression turned on) yet to be received and read by the service,
 enough to cause a read timeout.</p>
 <p>How about another option, if instead all the actions are read into a
 list, then pipeline from processing to output?</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  List<span style="color:#000;font-weight:bold">&lt;</span>Action<span style="color:#000;font-weight:bold">&gt;</span> actions <span style="color:#000;font-weight:bold">=</span>
-</span></span><span style="display:flex;"><span>    readAll<span style="color:#000;font-weight:bold">(</span>request<span style="color:#000;font-weight:bold">);</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#000;font-weight:bold">&lt;</span>Action<span style="color:#000;font-weight:bold">&gt;</span> actions <span style="color:#000;font-weight:bold">=</span>
+</span></span><span style="display:flex;"><span>  readAll<span style="color:#000;font-weight:bold">(</span>request<span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  Stream<span style="color:#000;font-weight:bold">&lt;</span>Result<span style="color:#000;font-weight:bold">&gt;</span> results <span style="color:#000;font-weight:bold">=</span>
-</span></span><span style="display:flex;"><span>    actions
-</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">stream</span><span style="color:#000;font-weight:bold">()</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">map</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>invoke<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>Stream<span style="color:#000;font-weight:bold">&lt;</span>Result<span style="color:#000;font-weight:bold">&gt;</span> results <span style="color:#000;font-weight:bold">=</span>
+</span></span><span style="display:flex;"><span>  actions
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">stream</span><span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">.</span><span style="color:#008080">map</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>invoke<span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  results<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">forEach</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>write<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>results<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">forEach</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">::</span>write<span style="color:#000;font-weight:bold">);</span>
 </span></span></code></pre></div><p>With this, the service would finish loading all actions into memory
 soon after the client finishes sending them, as request parsing is
 typically fast. Then the service starts processing and writing the

@@ -13,8 +13,8 @@ variable, which can be mutated before the constant is initialized to
 affect it's value:
 
 ```java
-  static final Language LANG =
-    Language.of(getEnv("LANG"));
+static final Language LANG =
+  Language.of(getEnv("LANG"));
 ```
 
 Another example, this time it isn't a constant but it's intended to be
@@ -22,12 +22,12 @@ used like a constant after it's initial value is set by some
 annotation processing library:
 
 ```java
-  @Environment("LANG")
-  private static Language LANG;
+@Environment("LANG")
+private static Language LANG;
 
-  static Language lang() {
-    return LANG;
-  }
+static Language lang() {
+  return LANG;
+}
 ```
 
 There are undesired implications when code is written to use such
@@ -37,16 +37,16 @@ Take the following program that produces different results based on
 the current `LANG` environment variable:
 
 ```java
-  static final Language LANG =
-    Language.of(getEnv("LANG"));
+static final Language LANG =
+  Language.of(getEnv("LANG"));
 
-  static String greet() {
-    return LANG.translate("Hello");
-  }
+static String greet() {
+  return LANG.translate("Hello");
+}
 
-  static void main(String... args) {
-    println(greet());
-  }
+static void main(String... args) {
+  println(greet());
+}
 ```
 
 It's **untestable** as you can't unit test `greet()` with different
@@ -68,15 +68,15 @@ of them).
 Mutable constants should really be parameters instead:
 
 ```java
-  static String greet(Language lang) {
-    return lang.translate("Hello");
-  }
+static String greet(Language lang) {
+  return lang.translate("Hello");
+}
 
-  static void main(String... args) {
-    var env = getEnv("LANG");
-    var lang = Language.of(env);
-    println(greet(lang));
-  }
+static void main(String... args) {
+  var env = getEnv("LANG");
+  var lang = Language.of(env);
+  println(greet(lang));
+}
 ```
 
 This makes the code testable, testable in parallel, dependency is
