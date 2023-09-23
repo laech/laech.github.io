@@ -14,7 +14,7 @@
       
       <guid>https://lae.nz/posts/when-black-magic-fails-silently/</guid>
       <description>Sometimes you run into black magic in a code base, the sort of thing that works but you don&amp;rsquo;t really know why, but you can accept it and move on, because it all just work.
-Except when it shoots you in the foot to remind you it doesn&amp;rsquo;t always work as advertised. If you are luckly, you&amp;rsquo;ll get a big error screaming in your face, but often you are not that luckly, it breaks things silently and carries on.</description>
+Except when it shoots you in the foot to remind you it doesn&amp;rsquo;t always work as advertised. If you are lucky, you&amp;rsquo;ll get a big error screaming in your face, but often you are not that luckily, it breaks things silently and carries on.</description>
     </item>
     
     <item>

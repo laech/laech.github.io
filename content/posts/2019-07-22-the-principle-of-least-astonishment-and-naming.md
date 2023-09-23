@@ -55,7 +55,7 @@ production.
 
 The other problem is you tend to forget about things after a while, so
 you started to make the same mistake again by using `toMap` thinking
-it behaves like a normal map, only to find youself relearning the
+it behaves like a normal map, only to find yourself relearning the
 same lesson again, and again, when it surprises you by breaking
 things. Same goes for your friends.
 

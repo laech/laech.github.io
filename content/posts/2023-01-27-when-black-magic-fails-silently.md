@@ -10,9 +10,9 @@ that works but you don't really know why, but you can accept it and
 move on, because it all just work.
 
 Except when it shoots you in the foot to remind you it doesn't always
-work as advertised. If you are luckly, you'll get a big error
-screaming in your face, but often you are not that luckly, it breaks
-things silently and carries on.
+work as advertised. If you are lucky, you'll get a big error screaming
+in your face, but often you are not that luckily, it breaks things
+silently and carries on.
 
 Take Spring for example, a popular framework in the Java world. Say
 you want to run some code within a database transaction, you often
@@ -47,7 +47,7 @@ class UserService {
 This won't work because you forgot to annotate the class with
 `@Validated` (which is easily missed if your class already has half a
 dozen annotations), so again it will silently do nothing and the
-method will happyly accept invalid input, or worse, causing security
+method will happily accept invalid input, or worse, causing security
 issues.
 
 Yet another example, you want to listen to certain events and want to
@@ -63,5 +63,5 @@ successfully:
 
 This works until you want to write to the database within the event
 method. Your writes will appear to return successfully, but in fact
-they are all dropped silently behind the scence, and this is a
+they are all dropped silently behind the scenes, and this is a
 documented expected behaviour. Shocking.
