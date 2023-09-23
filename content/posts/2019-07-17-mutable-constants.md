@@ -2,7 +2,7 @@
 title: Mutable Constants
 date: 2019-07-17
 draft: false
-slug: 2019/07/17/mutable-constants
+slug: mutable-constants
 ---
 
 Mutable constants are essentially constants initialized from mutable

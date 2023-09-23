@@ -2,7 +2,7 @@
 title: Dependency Injection is Parameter Passing
 date: 2019-12-18
 draft: false
-slug: 2019/12/18/dependency-injection-is-parameter-passing
+slug: dependency-injection-is-parameter-passing
 ---
 
 Dependency injection means that instead of a function reaching out to

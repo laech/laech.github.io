@@ -9,30 +9,30 @@
     <lastBuildDate>Fri, 27 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://d25yyb6maftl28.cloudfront.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>When Black Magic Fails Silently</title>
-      <link>https://d25yyb6maftl28.cloudfront.net/posts/2023/01/27/when-black-magic-fails-silently/</link>
+      <link>https://d25yyb6maftl28.cloudfront.net/posts/when-black-magic-fails-silently/</link>
       <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://d25yyb6maftl28.cloudfront.net/posts/2023/01/27/when-black-magic-fails-silently/</guid>
+      <guid>https://d25yyb6maftl28.cloudfront.net/posts/when-black-magic-fails-silently/</guid>
       <description>Sometimes you run into black magic in a code base, the sort of thing that works but you don&amp;rsquo;t really know why, but you can accept it and move on, because it all just work.
 Except when it shoots you in the foot to remind you it doesn&amp;rsquo;t always work as advertised. If you are luckly, you&amp;rsquo;ll get a big error screaming in your face, but often you are not that luckly, it breaks things silently and carries on.</description>
     </item>
     
     <item>
       <title>Dependency Injection is Parameter Passing</title>
-      <link>https://d25yyb6maftl28.cloudfront.net/posts/2019/12/18/dependency-injection-is-parameter-passing/</link>
+      <link>https://d25yyb6maftl28.cloudfront.net/posts/dependency-injection-is-parameter-passing/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://d25yyb6maftl28.cloudfront.net/posts/2019/12/18/dependency-injection-is-parameter-passing/</guid>
+      <guid>https://d25yyb6maftl28.cloudfront.net/posts/dependency-injection-is-parameter-passing/</guid>
       <description>Dependency injection means that instead of a function reaching out to get its dependencies, it accepts the dependencies as parameters instead. A dependency may be an external service, or something that produces observable side effects, etc.
 // Before static void isBedTime() { var clock = Clock.getSystemClock(); var time = clock.now(); return time.hour() &amp;gt;= 23; } // After static void isBedTime(Clock clock) { var time = clock.now(); return time.hour() &amp;gt;= 23; } This make the function dumb (in a good way), and the dependencies clear to the caller.</description>
     </item>
     
     <item>
       <title>Pipeline from Input, or Pipeline to Output?</title>
-      <link>https://d25yyb6maftl28.cloudfront.net/posts/2019/07/26/pipeline-from-input-or-pipeline-to-output/</link>
+      <link>https://d25yyb6maftl28.cloudfront.net/posts/pipeline-from-input-or-pipeline-to-output/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://d25yyb6maftl28.cloudfront.net/posts/2019/07/26/pipeline-from-input-or-pipeline-to-output/</guid>
+      <guid>https://d25yyb6maftl28.cloudfront.net/posts/pipeline-from-input-or-pipeline-to-output/</guid>
       <description>Let say you are going to implement an HTTP service, we can post it a list of actions, it will perform those actions and return a list of results.
 The first version is simple, read the actions, process them, then write the results.
 List&amp;lt;Action&amp;gt; actions = readAll(request); List&amp;lt;Result&amp;gt; results = invokeAll(actions); results.forEach(this::write); Everything seems to work fine but after a while clients are starting to get timeouts.
@@ -41,20 +41,20 @@ It turns out that some actions take longer time to complete, say about 1 second,
     
     <item>
       <title>TCP Deadlock</title>
-      <link>https://d25yyb6maftl28.cloudfront.net/posts/2019/07/25/tcp-deadlock/</link>
+      <link>https://d25yyb6maftl28.cloudfront.net/posts/tcp-deadlock/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://d25yyb6maftl28.cloudfront.net/posts/2019/07/25/tcp-deadlock/</guid>
+      <guid>https://d25yyb6maftl28.cloudfront.net/posts/tcp-deadlock/</guid>
       <description>Let&amp;rsquo;s imagine an echo server implementation, where the server simply takes the request input stream, copies the bytes to the response output stream.
 Let&amp;rsquo;s say a client starts sending bytes to the server, and the server starts writing the bytes out as soon as they come in, it&amp;rsquo;s pretty nice that the server doesn&amp;rsquo;t need to load the whole request first, which means the client can see the response quickly if it wishes to.</description>
     </item>
     
     <item>
       <title>The Principle of Least Astonishment, and Naming</title>
-      <link>https://d25yyb6maftl28.cloudfront.net/posts/2019/07/22/the-principle-of-least-astonishment-and-naming/</link>
+      <link>https://d25yyb6maftl28.cloudfront.net/posts/the-principle-of-least-astonishment-and-naming/</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://d25yyb6maftl28.cloudfront.net/posts/2019/07/22/the-principle-of-least-astonishment-and-naming/</guid>
+      <guid>https://d25yyb6maftl28.cloudfront.net/posts/the-principle-of-least-astonishment-and-naming/</guid>
       <description>The Principle of Least Astonishment states that code should behave in expected ways without hidden surprises. The following is an example of how improperly named things will introduce bugs into systems.
 Given a list of players, each player has multiple games, we want to build a map from game IDs to game names. We could do so using a Map and loops Java:
 Map&amp;lt;Integer, String&amp;gt; games = ...; for (var player : players) { for (var game : player.</description>
@@ -62,10 +62,10 @@ Map&amp;lt;Integer, String&amp;gt; games = ...; for (var player : players) { for
     
     <item>
       <title>Mutable Constants</title>
-      <link>https://d25yyb6maftl28.cloudfront.net/posts/2019/07/17/mutable-constants/</link>
+      <link>https://d25yyb6maftl28.cloudfront.net/posts/mutable-constants/</link>
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://d25yyb6maftl28.cloudfront.net/posts/2019/07/17/mutable-constants/</guid>
+      <guid>https://d25yyb6maftl28.cloudfront.net/posts/mutable-constants/</guid>
       <description>Mutable constants are essentially constants initialized from mutable variables.
 For example, a constant in code but initialized from an environment variable, which can be mutated before the constant is initialized to affect it&amp;rsquo;s value:
 static final Language LANG = Language.of(getEnv(&amp;#34;LANG&amp;#34;)); Another example, this time it isn&amp;rsquo;t a constant but it&amp;rsquo;s intended to be used like a constant after it&amp;rsquo;s initial value is set by some annotation processing library:
