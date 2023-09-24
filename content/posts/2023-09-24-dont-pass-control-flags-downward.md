@@ -1,5 +1,5 @@
 ---
-title: Don’t Pass Control Flags Downward
+title: Don't Pass Control Flags Downward
 date: 2023-09-24
 draft: false
 slug: dont-pass-control-flags-downward
