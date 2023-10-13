@@ -1,6 +1,6 @@
 baseURL = 'https://lae.nz'
 languageCode = 'en-us'
-title = 'Lae'
+title = "Lae's Blog"
 theme = 'default'
 disableKinds = ["taxonomy", "term", "sitemap"]
 

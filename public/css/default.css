@@ -36,3 +36,8 @@ p.date {
   margin-right: 1em;
   text-align: right;
 }
+
+figure.inline {
+  display: inline;
+  margin: 0;
+}
