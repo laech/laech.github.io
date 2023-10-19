@@ -19,20 +19,34 @@ Canonical would do so free of charge. Recently while sorting some old
 stuff out, I have found such a CD, it was for Ubuntu 8.04 (Hardy
 Heron). So for fun I booted it up, and here are some obligated photos
 and screenshots.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;ubuntu-disc.jpg&#34; alt=&#34;Ubuntu Disc&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;ubuntu-cover.jpg&#34; alt=&#34;Ubuntu Cover&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/ubuntu-disc.jpg&#34;  alt=&#34;Ubuntu Disc&#34;   /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/ubuntu-cover.jpg&#34;  alt=&#34;Ubuntu Cover&#34;   /&gt;
+&lt;/p&gt;
 &lt;p&gt;Only needs 384MB of RAM. 👴&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;desktop.jpg&#34; alt=&#34;Desktop&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;welcome.jpg&#34; alt=&#34;Welcome&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/desktop.jpg&#34;  alt=&#34;Desktop&#34;   /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/welcome.jpg&#34;  alt=&#34;Welcome&#34;   /&gt;
+&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Ubuntu has a clear focus on the user and usability - it should Just
 Work.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;That&amp;rsquo;s arguably still true to this day, at least when compared to
 vanilla Gnome.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;openoffice.jpg&#34; alt=&#34;OpenOffice&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;gimp.jpg&#34; alt=&#34;GIMP&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;firefox.jpg&#34; alt=&#34;Firefox&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/openoffice.jpg&#34;  alt=&#34;OpenOffice&#34;   /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/gimp.jpg&#34;  alt=&#34;GIMP&#34;   /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/firefox.jpg&#34;  alt=&#34;Firefox&#34;   /&gt;
+&lt;/p&gt;
 &lt;p&gt;Pretty surprised to see Google automatically loads a version of itself
 that works in such an old version of Firefox, while others like Bing
 and DuckDuckGo would just straight up refused to load.&lt;/p&gt;
@@ -72,18 +86,18 @@ range for the data to view, allows you to aggregate the data in a few
 different ways, and draws a bar graph on the side for visualization.&lt;/p&gt;
 &lt;p&gt;Here are some historical screenshots (all stats shown are actual stats
 of me spent working on the project):&lt;/p&gt;
-&lt;figure class=&#34;inline&#34;&gt;&lt;a href=&#34;rabbit-sessions.png&#34;&gt;&lt;img src=&#34;rabbit-sessions.png&#34; height=&#34;100&#34;/&gt;&lt;/a&gt;
-&lt;/figure&gt;
-
-&lt;figure class=&#34;inline&#34;&gt;&lt;a href=&#34;rabbit-java.png&#34;&gt;&lt;img src=&#34;rabbit-java.png&#34; height=&#34;100&#34;/&gt;&lt;/a&gt;
-&lt;/figure&gt;
-
-&lt;figure class=&#34;inline&#34;&gt;&lt;a href=&#34;rabbit-commands.png&#34;&gt;&lt;img src=&#34;rabbit-commands.png&#34; height=&#34;100&#34;/&gt;&lt;/a&gt;
-&lt;/figure&gt;
-
-&lt;figure class=&#34;inline&#34;&gt;&lt;a href=&#34;rabbit-files.png&#34;&gt;&lt;img src=&#34;rabbit-files.png&#34; height=&#34;100&#34;/&gt;&lt;/a&gt;
-&lt;/figure&gt;
-
+&lt;p&gt;
+&lt;img src=&#34;https://lae.nz/posts/my-first-open-source-project/rabbit-sessions.png&#34;  alt=&#34;Rabbit Sessions&#34;   /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;img src=&#34;https://lae.nz/posts/my-first-open-source-project/rabbit-java.png&#34;  alt=&#34;Rabbit Java&#34;   /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;img src=&#34;https://lae.nz/posts/my-first-open-source-project/rabbit-commands.png&#34;  alt=&#34;Rabbit Commands&#34;   /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;img src=&#34;https://lae.nz/posts/my-first-open-source-project/rabbit-files.png&#34;  alt=&#34;Rabbit Files&#34;   /&gt;
+&lt;/p&gt;
 &lt;p&gt;And according to the GitHub stats, I&amp;rsquo;ve added ~270K lines and removed
 ~225K lines of code cross a period of about a year and half between
 2010 and 2011, and the project contains roughly ~45K lines of code.&lt;/p&gt;

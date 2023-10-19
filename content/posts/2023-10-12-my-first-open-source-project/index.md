@@ -36,17 +36,13 @@ different ways, and draws a bar graph on the side for visualization.
 Here are some historical screenshots (all stats shown are actual stats
 of me spent working on the project):
 
-{{< figure class="inline" height="100" link="rabbit-sessions.png"
-src="rabbit-sessions.png" >}}
+![Rabbit Sessions](rabbit-sessions.png)
 
-{{< figure class="inline" height="100" link="rabbit-java.png"
-src="rabbit-java.png" >}}
+![Rabbit Java](rabbit-java.png)
 
-{{< figure class="inline" height="100" link="rabbit-commands.png"
-  src="rabbit-commands.png" >}}
+![Rabbit Commands](rabbit-commands.png)
 
-{{< figure class="inline" height="100" link="rabbit-files.png"
-src="rabbit-files.png" >}}
+![Rabbit Files](rabbit-files.png)
 
 And according to the GitHub stats, I've added ~270K lines and removed
 ~225K lines of code cross a period of about a year and half between
