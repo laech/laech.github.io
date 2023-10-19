@@ -6,7 +6,39 @@
     <description>Recent content on Lae&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://lae.nz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://lae.nz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu 8.04</title>
+      <link>https://lae.nz/posts/ubuntu-8-04/</link>
+      <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://lae.nz/posts/ubuntu-8-04/</guid>
+      <description>&lt;p&gt;Back in the days when new versions of Ubuntu were being released, you
+can actually request an installation CD to be sent to you, and
+Canonical would do so free of charge. Recently while sorting some old
+stuff out, I have found such a CD, it was for Ubuntu 8.04 (Hardy
+Heron). So for fun I booted it up, and here are some obligated photos
+and screenshots.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;ubuntu-disc.jpg&#34; alt=&#34;Ubuntu Disc&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;ubuntu-cover.jpg&#34; alt=&#34;Ubuntu Cover&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Only needs 384MB of RAM. 👴&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;desktop.jpg&#34; alt=&#34;Desktop&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;welcome.jpg&#34; alt=&#34;Welcome&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ubuntu has a clear focus on the user and usability - it should Just
+Work.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That&amp;rsquo;s arguably still true to this day, at least when compared to
+vanilla Gnome.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;openoffice.jpg&#34; alt=&#34;OpenOffice&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;gimp.jpg&#34; alt=&#34;GIMP&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;firefox.jpg&#34; alt=&#34;Firefox&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Pretty surprised to see Google automatically loads a version of itself
+that works in such an old version of Firefox, while others like Bing
+and DuckDuckGo would just straight up refused to load.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>My First Open Source Project</title>
       <link>https://lae.nz/posts/my-first-open-source-project/</link>
