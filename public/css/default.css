@@ -12,10 +12,6 @@ body {
   padding-bottom: 0.5em;
 }
 
-a:not(:hover) {
-  text-decoration: none;
-}
-
 p {
   line-height: 150%;
 }
@@ -27,8 +23,8 @@ table.posts td {
 
 table.posts .date {
   padding-right: 0.5em;
-  text-wrap: nowrap;
   vertical-align: top;
+  white-space: nowrap;
 }
 
 p.date {
