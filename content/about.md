@@ -35,7 +35,6 @@ Here are some of the things I can do for you:
   systems that are correct, performant, and well designed. You can
   find my experience in this area in [my CV](/cv.pdf).
 
-
 * **Open source development**. I love open source, and like to
   contribute when I can to make things better for everyone. I have
   written detailed bug reports to help projects resolve issues
@@ -50,6 +49,11 @@ Here are some of the things I can do for you:
   ([1](https://github.com/laech/java-stacksrc),
   [2](https://github.com/laech/intellij-actions-tree),
   [3](https://github.com/laech/intellij-jump)).
+
+* **Tools development**. Throughout my career and on my own projects,
+  I have built specialized tools for solving specific problems,
+  including software frameworks/libraries, command line applications,
+  and IDE plugins.
 
 Technologies I use:
 
