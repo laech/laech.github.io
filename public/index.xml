@@ -66,17 +66,25 @@ project at the university, I thought I had a few ideas that could take
 it further, so I decided to start from scratch.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s more a decade ago at this point, so I have forgotten most of the
 things about it, but I still remember spending most of my free time,
-day and night, half lying on the couch (not recommended) with my &lt;a href=&#34;https://en.wikipedia.org/wiki/Dell_Studio&#34;&gt;Dell
-Studio 15&lt;/a&gt; laptop at the
+day and night, half lying on the couch (not recommended) with my 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Dell_Studio&#34; &gt;Dell
+Studio 15&lt;/a&gt;
+ laptop at the
 time, designing features, class diagrams, writing code, unit tests, UI
 tests, reading about good coding practices and applying them on the
 project, purely for fun, I loved it, and I had learned so much in the
 process.&lt;/p&gt;
 &lt;p&gt;It was called Rabbit (I couldn&amp;rsquo;t think of better names at the time), a
-plugin for &lt;a href=&#34;https://www.eclipse.org/ide/&#34;&gt;the Eclipse IDE&lt;/a&gt;, hosted on
-Google Code with SVN, later moved to Git (&lt;a href=&#34;https://code.google.com/archive/p/rabbit-eclipse/&#34;&gt;Google Code archive
-here&lt;/a&gt;, &lt;a href=&#34;https://github.com/laech/eclipse-rabbit&#34;&gt;GitHub
-archive here&lt;/a&gt;), it tracks
+plugin for 
+&lt;a href=&#34;https://www.eclipse.org/ide/&#34; &gt;the Eclipse IDE&lt;/a&gt;
+, hosted on
+Google Code with SVN, later moved to Git (
+&lt;a href=&#34;https://code.google.com/archive/p/rabbit-eclipse/&#34; &gt;Google Code archive
+here&lt;/a&gt;
+, 
+&lt;a href=&#34;https://github.com/laech/eclipse-rabbit&#34; &gt;GitHub
+archive here&lt;/a&gt;
+), it tracks
 statistics on what functionalities you use and how you spent your time
 in the IDE. For example, how often you use each command, how much time
 you spent editing each file, it even tracks how much time you spent
@@ -101,9 +109,11 @@ of me spent working on the project):&lt;/p&gt;
 &lt;p&gt;And according to the GitHub stats, I&amp;rsquo;ve added ~270K lines and removed
 ~225K lines of code cross a period of about a year and half between
 2010 and 2011, and the project contains roughly ~45K lines of code.&lt;/p&gt;
-&lt;p&gt;Being an open source project, it has received a few &lt;a href=&#34;https://code.google.com/archive/p/rabbit-eclipse/issues&#34;&gt;feature requests
+&lt;p&gt;Being an open source project, it has received a few 
+&lt;a href=&#34;https://code.google.com/archive/p/rabbit-eclipse/issues&#34; &gt;feature requests
 and bug
-reports&lt;/a&gt;. And
+reports&lt;/a&gt;
+. And
 I have had some interesting email exchanges with others as well:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -162,7 +172,9 @@ a bike by just reading about it.&lt;/p&gt;
       <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://lae.nz/posts/dont-pass-control-flags-downward/</guid>
-      <description>&lt;p&gt;This is tip 6.2 from &lt;a href=&#34;https://thinking-forth.sourceforge.net&#34;&gt;Thinking Forth&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This is tip 6.2 from 
+&lt;a href=&#34;https://thinking-forth.sourceforge.net&#34; &gt;Thinking Forth&lt;/a&gt;
+.&lt;/p&gt;
 &lt;p&gt;Suppose we have the some code that looks like the following:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;Window&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;setVisible&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;boolean&lt;/span&gt; show&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -347,8 +359,10 @@ service, turning it into a pipeline (&lt;code&gt;Stream&lt;/code&gt; is lazy seq
 a pipeline. Clients will see the results incrementally as they
 complete, no need to wait for everything to be processed first. And this
 keeps data flowing continuously, avoiding idle timeouts.&lt;/p&gt;
-&lt;p&gt;But then you remembered this is no good as it could cause &lt;a href=&#34;https://lae.nz/posts/tcp-deadlock/&#34;&gt;TCP
-Deadlocks&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;But then you remembered this is no good as it could cause 
+&lt;a href=&#34;https://lae.nz/posts/tcp-deadlock/&#34; &gt;TCP
+Deadlocks&lt;/a&gt;
+.&lt;/p&gt;
 &lt;p&gt;Now what other options are there? If a full pipeline is no good, maybe
 a partial pipeline would be okay?&lt;/p&gt;
 &lt;p&gt;For the next option, the service can pipeline from the input, but
