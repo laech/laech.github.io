@@ -1,5 +1,7 @@
 # TCP Deadlock
 
+2019-07-25
+
 Let's imagine an echo server implementation, where the server simply
 takes the request input stream, copies the bytes to the response
 output stream.

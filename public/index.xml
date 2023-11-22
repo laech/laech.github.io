@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><id>https://lae.nz/</id><title>Lae's Blog</title><link href="https://lae.nz/"/><link href="https://lae.nz/index.xml" rel="self"/><updated>2023-10-19T00:00:00Z</updated><author><name>Lae Chen</name></author><entry><id>https://lae.nz/posts/2023-10-19-ubuntu-8-04.html</id><link href="https://lae.nz/posts/2023-10-19-ubuntu-8-04.html"/><title>Ubuntu 8.04</title><updated>2023-10-19T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>Ubuntu 8.04</h1>
+<p>2023-10-19</p>
 <p>Back in the days when new versions of Ubuntu were being released, you
 can actually request an installation CD to be sent to you, and
 Canonical would do so free of charge. Recently while sorting some old
@@ -23,6 +24,7 @@ vanilla Gnome.</p>
 that works in such an old version of Firefox, while others like Bing
 and DuckDuckGo would just straight up refused to load.</p>
 </div></content></entry><entry><id>https://lae.nz/posts/2023-10-12-my-first-open-source-project.html</id><link href="https://lae.nz/posts/2023-10-12-my-first-open-source-project.html"/><title>My First Open Source Project</title><updated>2023-10-12T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>My First Open Source Project</h1>
+<p>2023-10-12</p>
 <p>Back in early 2010, when I was fresh out of university, and was still
 looking for my first programming job, I started working on my very
 first open source project. It was inspired by the last year group
@@ -110,6 +112,7 @@ a bike by just reading about it.</p>
 </li>
 </ul>
 </div></content></entry><entry><id>https://lae.nz/posts/2023-09-24-dont-pass-control-flags-downward.html</id><link href="https://lae.nz/posts/2023-09-24-dont-pass-control-flags-downward.html"/><title>Don't Pass Control Flags Downward</title><updated>2023-09-24T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>Don't Pass Control Flags Downward</h1>
+<p>2023-09-24</p>
 <p>This is tip 6.2 from <a href="https://thinking-forth.sourceforge.net">Thinking Forth</a>.</p>
 <p>Suppose we have the some code that looks like the following:</p>
 <pre><code class="language-java">class Window {
@@ -148,6 +151,7 @@ static void main(String... args) {
 }
 </code></pre>
 </div></content></entry><entry><id>https://lae.nz/posts/2023-01-27-when-black-magic-fails-silently.html</id><link href="https://lae.nz/posts/2023-01-27-when-black-magic-fails-silently.html"/><title>When Black Magic Fails Silently</title><updated>2023-01-27T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>When Black Magic Fails Silently</h1>
+<p>2023-01-27</p>
 <p>Sometimes you run into black magic in a code base, the sort of thing
 that works but you don't really know why, but you can accept it and
 move on, because it all just work.</p>
@@ -202,6 +206,7 @@ method. Your writes will appear to return successfully, but in fact
 they are all dropped silently behind the scenes, and this is a
 documented expected behaviour. Shocking.</p>
 </div></content></entry><entry><id>https://lae.nz/posts/2019-12-18-dependency-injection-is-parameter-passing.html</id><link href="https://lae.nz/posts/2019-12-18-dependency-injection-is-parameter-passing.html"/><title>Dependency Injection is Parameter Passing</title><updated>2019-12-18T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>Dependency Injection is Parameter Passing</h1>
+<p>2019-12-18</p>
 <p>Dependency injection means that instead of a function reaching out to
 get its dependencies, it accepts the dependencies as parameters
 instead. A dependency may be an external service, or something that
@@ -242,6 +247,7 @@ they all have their own complexity and issues. Dependency injection at
 it's core is just parameter passing, it's dumb and simple, and that's
 the way it should be. Less is more.</p>
 </div></content></entry><entry><id>https://lae.nz/posts/2019-07-26-pipeline-from-input-or-pipeline-to-output.html</id><link href="https://lae.nz/posts/2019-07-26-pipeline-from-input-or-pipeline-to-output.html"/><title>Pipeline from Input, or Pipeline to Output?</title><updated>2019-07-26T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>Pipeline from Input, or Pipeline to Output?</h1>
+<p>2019-07-26</p>
 <p>Let say you are going to implement an HTTP service, we can post it a
 list of actions, it will perform those actions and return a list of
 results.</p>
@@ -343,6 +349,7 @@ are other options though, but they will probably have their own set of
 trade offs. Sometimes there is just no perfect solution, but one can
 have options, and can pick one that has the best fit.</p>
 </div></content></entry><entry><id>https://lae.nz/posts/2019-07-25-tcp-deadlock.html</id><link href="https://lae.nz/posts/2019-07-25-tcp-deadlock.html"/><title>TCP Deadlock</title><updated>2019-07-25T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>TCP Deadlock</h1>
+<p>2019-07-25</p>
 <p>Let's imagine an echo server implementation, where the server simply
 takes the request input stream, copies the bytes to the response
 output stream.</p>
@@ -387,6 +394,7 @@ IO structure will experience deadlock. For example, a parent process
 starts a child process and sends data to it while the child process is
 output data at the same time.</p>
 </div></content></entry><entry><id>https://lae.nz/posts/2019-07-22-the-principle-of-least-astonishment-and-naming.html</id><link href="https://lae.nz/posts/2019-07-22-the-principle-of-least-astonishment-and-naming.html"/><title>The Principle of Least Astonishment, and Naming</title><updated>2019-07-22T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>The Principle of Least Astonishment, and Naming</h1>
+<p>2019-07-22</p>
 <p>The Principle of Least Astonishment states that code should behave in
 expected ways without hidden surprises. The following is an example of
 how improperly named things will introduce bugs into systems.</p>
@@ -433,6 +441,7 @@ things. Same goes for your friends.</p>
 <p>It should have been given an abnormal name that fits with the abnormal
 behavior.</p>
 </div></content></entry><entry><id>https://lae.nz/posts/2019-07-17-mutable-constants.html</id><link href="https://lae.nz/posts/2019-07-17-mutable-constants.html"/><title>Mutable Constants</title><updated>2019-07-17T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>Mutable Constants</h1>
+<p>2019-07-17</p>
 <p>Mutable constants are essentially constants initialized from mutable
 variables.</p>
 <p>For example, a constant in code but initialized from an environment
