@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="../../../../default.css"/>
+<title>When Black Magic Fails Silently</title>
+</head>
+<body><div id="nav"><p><a href="../../../../index.html">home</a>
+|
+<a href="../../../../index.xml">rss</a>
+|
+<a href="../../../../about.html">about</a>
+</p>
+</div>
+<div id="content"><h1>When Black Magic Fails Silently</h1>
+<p>2023-01-27</p>
+<p>Sometimes you run into black magic in a code base, the sort of thing
+that works but you don't really know why, but you can accept it and
+move on, because it all just work.</p>
+<p>Except when it shoots you in the foot to remind you it doesn't always
+work as advertised. If you are lucky, you'll get a big error screaming
+in your face, but often you are not that luckily, it breaks things
+silently and carries on.</p>
+<p>Take Spring for example, a popular framework in the Java world. Say
+you want to run some code within a database transaction, you often
+just annotate the method with <code>@Transactional</code>:</p>
+<pre><code class="language-java">@Service
+class UserService {
+  @Transactional
+  void updateDetails() {
+    // ...
+  }
+}
+</code></pre>
+<p>When <code>updateDetails()</code> is call by some other class, it will run
+magically inside a transaction. But if it's calls from some method
+within the same class, it will silently run the method without a
+transaction (this is the default behaviour unless you change it),
+resulting in bad data integrity - one of the worst things you would
+want to have in a production database, especially if your system deals
+with financial transactions.</p>
+<p>Another example is that, you may want to perform some common
+validations for your service parameters:</p>
+<pre><code class="language-java">@Service
+class UserService {
+  void updateName(@NotEmpty String name) {
+    // ...
+  }
+}
+</code></pre>
+<p>This won't work because you forgot to annotate the class with
+<code>@Validated</code> (which is easily missed if your class already has half a
+dozen annotations), so again it will silently do nothing and the
+method will happily accept invalid input, or worse, causing security
+issues.</p>
+<p>Yet another example, you want to listen to certain events and want to
+perform some action after the associated database transaction commits
+successfully:</p>
+<pre><code class="language-java">class UserEventListener {
+  @TransactionalEventListener
+  void onEvent(UserUpdated event) {
+    // ...
+  }
+}
+</code></pre>
+<p>This works until you want to write to the database within the event
+method. Your writes will appear to return successfully, but in fact
+they are all dropped silently behind the scenes, and this is a
+documented expected behaviour. Shocking.</p>
+</div>
+</body>
+</html>

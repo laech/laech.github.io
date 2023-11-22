@@ -13,7 +13,7 @@ import CMark (commonmarkToNode)
 import CMark qualified
 import Conduit (foldC, iterMC, mapMC, runConduitRes, sourceDirectoryDeep, (.|))
 import Control.Exception (throwIO)
-import Control.Monad (join)
+import Control.Monad (join, unless)
 import Control.Monad.IO.Class (MonadIO, liftIO)
 import Data.Foldable (find)
 import Data.Functor (($>))
@@ -27,11 +27,11 @@ import Data.Text qualified as Text
 import Data.Text.IO qualified as Text
 import Data.Text.Lazy qualified as LText
 import Data.Text.Lazy.IO qualified as LText
-import Data.Time (Day, UTCTime (UTCTime))
-import Data.Time.Format.ISO8601 (iso8601ParseM, iso8601Show)
+import Data.Time (Day, UTCTime (UTCTime), defaultTimeLocale, parseTimeM)
+import Data.Time.Format.ISO8601 (iso8601Show)
 import Data.Tree (Tree)
 import Data.Tree qualified as Tree
-import System.Directory (copyFile, createDirectoryIfMissing)
+import System.Directory (copyFile, createDirectoryIfMissing, doesFileExist)
 import System.FilePath
   ( joinPath,
     makeRelative,
@@ -39,7 +39,6 @@ import System.FilePath
     splitPath,
     takeDirectory,
     takeExtension,
-    takeFileName,
     (</>),
   )
 import Text.Blaze.Html.Renderer.Text (renderHtml)
@@ -52,7 +51,7 @@ sourceDir :: FilePath
 sourceDir = "content"
 
 outputDir :: FilePath
-outputDir = "public"
+outputDir = "docs"
 
 blogTitle :: Text
 blogTitle = "Lae's Blog"
@@ -132,11 +131,11 @@ loadResource sourceFile = liftIO $ do
 
     parseDate =
       maybe
-        (fail $ sourceFile ++ ": no ISO-8601 date in name")
+        (fail $ sourceFile ++ ": no date found in path")
         pure
-        . iso8601ParseM
+        . parseTimeM False defaultTimeLocale "%Y/%m/%d"
         . take 10
-        . takeFileName
+        . makeRelative (sourceDir </> "posts")
         $ sourceFile
 
 processResource :: (MonadIO m) => Resource -> m ProcessResult
@@ -166,7 +165,7 @@ processStatic Paths {sourceFile, outputFile} = liftIO $ do
 processMarkdown :: (MonadIO m) => Page -> m Page
 processMarkdown page@Page {title, paths} = liftIO $ do
   let outputFile = replaceExtension paths.outputFile ".html"
-  let doc = rewrite page.doc
+  doc <- rewrite page.doc
   createDirectoryIfMissing True (takeDirectory outputFile)
   LText.writeFile outputFile . renderHtml $ toHtml outputFile doc
   pure $ page {doc, paths = paths {outputFile}}
@@ -177,14 +176,16 @@ processMarkdown page@Page {title, paths} = liftIO $ do
         . CMark.nodeToHtml []
         . mdToNode
 
-    rewrite = fmap $ \case
-      CMark.LINK url t -> CMark.LINK (rewriteLink url) t
-      x -> x
+    rewrite = mdMapLinkM $ \url ->
+      if ":" `Text.isInfixOf` url
+        then pure url
+        else
+          checkExistsLocally url
+            $> maybe url (<> ".html") (Text.stripSuffix ".md" url)
 
-    rewriteLink url =
-      if not ("://" `Text.isInfixOf` url)
-        then maybe url (<> ".html") (Text.stripSuffix ".md" url)
-        else url
+    checkExistsLocally path =
+      let ref = takeDirectory paths.sourceFile </> Text.unpack path
+       in doesFileExist ref >>= flip unless (fail $ ref ++ " does not exits")
 
 htmlTemplate :: FilePath -> Text -> Html -> Html
 htmlTemplate outputFile title content = docTypeHtml $ do
@@ -305,6 +306,12 @@ mdGetTitle (Tree.Node _ children) =
     . find isJust
     . fmap mdGetTitle
     $ children
+
+mdMapLinkM :: (Monad m) => (CMark.Url -> m CMark.Url) -> Tree CMark.NodeType -> m (Tree CMark.NodeType)
+mdMapLinkM f = mapM $ \case
+  CMark.IMAGE url t -> flip CMark.IMAGE t <$> f url
+  CMark.LINK url t -> flip CMark.LINK t <$> f url
+  x -> pure x
 
 main :: IO ()
 main = do

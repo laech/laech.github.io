@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="../../../../default.css"/>
+<title>Don&#39;t Pass Control Flags Downward</title>
+</head>
+<body><div id="nav"><p><a href="../../../../index.html">home</a>
+|
+<a href="../../../../index.xml">rss</a>
+|
+<a href="../../../../about.html">about</a>
+</p>
+</div>
+<div id="content"><h1>Don't Pass Control Flags Downward</h1>
+<p>2023-09-24</p>
+<p>This is tip 6.2 from <a href="https://thinking-forth.sourceforge.net">Thinking Forth</a>.</p>
+<p>Suppose we have the some code that looks like the following:</p>
+<pre><code class="language-java">class Window {
+  void setVisible(boolean show) {
+    if (show) {
+      // ... show the window
+    } else {
+      // ... hide the window
+    }
+  }
+}
+
+static void main(String... args) {
+  var window = ...
+  window.setVisible(true);
+  // ... do something, then:
+  window.setVisible(false);
+}
+</code></pre>
+<p>We know exactly when the window should be shown/hidden at compile
+time, so the calls to <code>setVisible(boolean)</code> are asking the program to
+make pointless decisions at run time. It also makes the <code>setVisible</code>
+function trying to do two jobs, show and hide the window, which
+violates the single responsibility principle.</p>
+<p>So it would be better to just spell out exactly what our intentions are:</p>
+<pre><code class="language-java">class Window {
+  void show() {}
+  void hide() {}
+}
+
+static void main(String... args) {
+  var window = ...
+  window.show();
+  // ... do something, then:
+  window.hide();
+}
+</code></pre>
+</div>
+</body>
+</html>

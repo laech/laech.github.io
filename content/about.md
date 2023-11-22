@@ -30,7 +30,7 @@ Here are some of the things I can do for you:
   been about designing and building server side systems, APIs, data
   processing, in the cloud or on premise. I find delights in building
   systems that are correct, performant, and well designed. You can
-  find my experience in this area in [my CV](/cv.pdf).
+  find my experience in this area in [my CV](cv.pdf).
 
 * **Open source development**. I love open source, and like to
   contribute when I can to make things better for everyone. I have
