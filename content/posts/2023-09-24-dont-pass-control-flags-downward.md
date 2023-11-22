@@ -1,9 +1,4 @@
----
-title: Don't Pass Control Flags Downward
-date: 2023-09-24
-draft: false
-slug: dont-pass-control-flags-downward
----
+# Don't Pass Control Flags Downward
 
 This is tip 6.2 from [Thinking Forth](https://thinking-forth.sourceforge.net).
 

@@ -1,7 +1,4 @@
----
-title: About
-type: about
----
+# About
 
 Hi, I'm Lae Chen, an independent software engineer based in
 Christchurch, New Zealand.

@@ -1,414 +1,334 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Lae&#39;s Blog</title>
-    <link>https://lae.nz/</link>
-    <description>Recent content on Lae&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://lae.nz/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ubuntu 8.04</title>
-      <link>https://lae.nz/posts/ubuntu-8-04/</link>
-      <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://lae.nz/posts/ubuntu-8-04/</guid>
-      <description>&lt;p&gt;Back in the days when new versions of Ubuntu were being released, you
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><id>https://lae.nz/</id><title>Lae's Blog</title><link href="https://lae.nz/"/><link href="https://lae.nz/index.xml" rel="self"/><updated>2023-10-19T00:00:00Z</updated><author><name>Lae Chen</name></author><entry><id>https://lae.nz/posts/2023-10-19-ubuntu-8-04.html</id><link href="https://lae.nz/posts/2023-10-19-ubuntu-8-04.html"/><title>Ubuntu 8.04</title><updated>2023-10-19T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>Ubuntu 8.04</h1>
+<p>Back in the days when new versions of Ubuntu were being released, you
 can actually request an installation CD to be sent to you, and
 Canonical would do so free of charge. Recently while sorting some old
 stuff out, I have found such a CD, it was for Ubuntu 8.04 (Hardy
 Heron). So for fun I booted it up, and here are some obligated photos
-and screenshots.&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/ubuntu-disc.jpg&#34;  alt=&#34;Ubuntu Disc&#34;   /&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/ubuntu-cover.jpg&#34;  alt=&#34;Ubuntu Cover&#34;   /&gt;
-&lt;/p&gt;
-&lt;p&gt;Only needs 384MB of RAM. 👴&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/desktop.jpg&#34;  alt=&#34;Desktop&#34;   /&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/welcome.jpg&#34;  alt=&#34;Welcome&#34;   /&gt;
-&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Ubuntu has a clear focus on the user and usability - it should Just
-Work.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;That&amp;rsquo;s arguably still true to this day, at least when compared to
-vanilla Gnome.&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/openoffice.jpg&#34;  alt=&#34;OpenOffice&#34;   /&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/gimp.jpg&#34;  alt=&#34;GIMP&#34;   /&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://lae.nz/posts/ubuntu-8-04/firefox.jpg&#34;  alt=&#34;Firefox&#34;   /&gt;
-&lt;/p&gt;
-&lt;p&gt;Pretty surprised to see Google automatically loads a version of itself
+and screenshots.</p>
+<p><img alt="Ubuntu Disc" src="https://lae.nz/posts/2023-10-19-ubuntu-8-04/ubuntu-disc.jpg"/></p>
+<p><img alt="Ubuntu Cover" src="https://lae.nz/posts/2023-10-19-ubuntu-8-04/ubuntu-cover.jpg"/></p>
+<p>Only needs 384MB of RAM. 👴</p>
+<p><img alt="Desktop" src="https://lae.nz/posts/2023-10-19-ubuntu-8-04/desktop.jpg"/></p>
+<p><img alt="Welcome" src="https://lae.nz/posts/2023-10-19-ubuntu-8-04/welcome.jpg"/></p>
+<blockquote>
+<p>Ubuntu has a clear focus on the user and usability - it should Just
+Work.</p>
+</blockquote>
+<p>That's arguably still true to this day, at least when compared to
+vanilla Gnome.</p>
+<p><img alt="OpenOffice" src="https://lae.nz/posts/2023-10-19-ubuntu-8-04/openoffice.jpg"/></p>
+<p><img alt="GIMP" src="https://lae.nz/posts/2023-10-19-ubuntu-8-04/gimp.jpg"/></p>
+<p><img alt="Firefox" src="https://lae.nz/posts/2023-10-19-ubuntu-8-04/firefox.jpg"/></p>
+<p>Pretty surprised to see Google automatically loads a version of itself
 that works in such an old version of Firefox, while others like Bing
-and DuckDuckGo would just straight up refused to load.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My First Open Source Project</title>
-      <link>https://lae.nz/posts/my-first-open-source-project/</link>
-      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://lae.nz/posts/my-first-open-source-project/</guid>
-      <description>&lt;p&gt;Back in early 2010, when I was fresh out of university, and was still
+and DuckDuckGo would just straight up refused to load.</p>
+</div></content></entry><entry><id>https://lae.nz/posts/2023-10-12-my-first-open-source-project.html</id><link href="https://lae.nz/posts/2023-10-12-my-first-open-source-project.html"/><title>My First Open Source Project</title><updated>2023-10-12T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>My First Open Source Project</h1>
+<p>Back in early 2010, when I was fresh out of university, and was still
 looking for my first programming job, I started working on my very
 first open source project. It was inspired by the last year group
 project at the university, I thought I had a few ideas that could take
-it further, so I decided to start from scratch.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s more a decade ago at this point, so I have forgotten most of the
+it further, so I decided to start from scratch.</p>
+<p>It's more a decade ago at this point, so I have forgotten most of the
 things about it, but I still remember spending most of my free time,
-day and night, half lying on the couch (not recommended) with my 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Dell_Studio&#34; &gt;Dell
-Studio 15&lt;/a&gt;
- laptop at the
+day and night, half lying on the couch (not recommended) with my <a href="https://en.wikipedia.org/wiki/Dell_Studio">Dell
+Studio 15</a> laptop at the
 time, designing features, class diagrams, writing code, unit tests, UI
 tests, reading about good coding practices and applying them on the
 project, purely for fun, I loved it, and I had learned so much in the
-process.&lt;/p&gt;
-&lt;p&gt;It was called Rabbit (I couldn&amp;rsquo;t think of better names at the time), a
-plugin for 
-&lt;a href=&#34;https://www.eclipse.org/ide/&#34; &gt;the Eclipse IDE&lt;/a&gt;
-, hosted on
-Google Code with SVN, later moved to Git (
-&lt;a href=&#34;https://code.google.com/archive/p/rabbit-eclipse/&#34; &gt;Google Code archive
-here&lt;/a&gt;
-, 
-&lt;a href=&#34;https://github.com/laech/eclipse-rabbit&#34; &gt;GitHub
-archive here&lt;/a&gt;
-), it tracks
+process.</p>
+<p>It was called Rabbit (I couldn't think of better names at the time), a
+plugin for <a href="https://www.eclipse.org/ide/">the Eclipse IDE</a>, hosted on
+Google Code with SVN, later moved to Git (<a href="https://code.google.com/archive/p/rabbit-eclipse/">Google Code archive
+here</a>, <a href="https://github.com/laech/eclipse-rabbit">GitHub
+archive here</a>), it tracks
 statistics on what functionalities you use and how you spent your time
 in the IDE. For example, how often you use each command, how much time
 you spent editing each file, it even tracks how much time you spent
 writing each Java function (I was quite proud of that feature). The
 user interface was also pretty awesome, it lets you specify a date
 range for the data to view, allows you to aggregate the data in a few
-different ways, and draws a bar graph on the side for visualization.&lt;/p&gt;
-&lt;p&gt;Here are some historical screenshots (all stats shown are actual stats
-of me spent working on the project):&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://lae.nz/posts/my-first-open-source-project/rabbit-sessions.png&#34;  alt=&#34;Rabbit Sessions&#34;   /&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://lae.nz/posts/my-first-open-source-project/rabbit-java.png&#34;  alt=&#34;Rabbit Java&#34;   /&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://lae.nz/posts/my-first-open-source-project/rabbit-commands.png&#34;  alt=&#34;Rabbit Commands&#34;   /&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://lae.nz/posts/my-first-open-source-project/rabbit-files.png&#34;  alt=&#34;Rabbit Files&#34;   /&gt;
-&lt;/p&gt;
-&lt;p&gt;And according to the GitHub stats, I&amp;rsquo;ve added ~270K lines and removed
+different ways, and draws a bar graph on the side for visualization.</p>
+<p>Here are some historical screenshots (all stats shown are actual stats
+of me spent working on the project):</p>
+<p><img alt="Rabbit Sessions" src="https://lae.nz/posts/2023-10-12-my-first-open-source-project/rabbit-sessions.png"/></p>
+<p><img alt="Rabbit Java" src="https://lae.nz/posts/2023-10-12-my-first-open-source-project/rabbit-java.png"/></p>
+<p><img alt="Rabbit Commands" src="https://lae.nz/posts/2023-10-12-my-first-open-source-project/rabbit-commands.png"/></p>
+<p><img alt="Rabbit Files" src="https://lae.nz/posts/2023-10-12-my-first-open-source-project/rabbit-files.png"/></p>
+<p>And according to the GitHub stats, I've added ~270K lines and removed
 ~225K lines of code cross a period of about a year and half between
-2010 and 2011, and the project contains roughly ~45K lines of code.&lt;/p&gt;
-&lt;p&gt;Being an open source project, it has received a few 
-&lt;a href=&#34;https://code.google.com/archive/p/rabbit-eclipse/issues&#34; &gt;feature requests
+2010 and 2011, and the project contains roughly ~45K lines of code.</p>
+<p>Being an open source project, it has received a few <a href="https://code.google.com/archive/p/rabbit-eclipse/issues">feature requests
 and bug
-reports&lt;/a&gt;
-. And
-I have had some interesting email exchanges with others as well:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;André from the University of Zurich was expanding on the code as
-part of his bachelor thesis.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Russell from Auburn University wanted to use the plugin in one of
+reports</a>. And
+I have had some interesting email exchanges with others as well:</p>
+<ul>
+<li>
+<p>André from the University of Zurich was expanding on the code as
+part of his bachelor thesis.</p>
+</li>
+<li>
+<p>Russell from Auburn University wanted to use the plugin in one of
 his spring classes, and he even extended it to support tracking time
-spent on Python classes/functions.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Someone tried to use the plugin as a way to &amp;ldquo;keep people on track&amp;rdquo;,
-as they believed their programmers weren&amp;rsquo;t as honest as they would
-like them to be&amp;hellip;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Now skimming through the project code, it&amp;rsquo;s actually somewhat clean,
+spent on Python classes/functions.</p>
+</li>
+<li>
+<p>Someone tried to use the plugin as a way to "keep people on track",
+as they believed their programmers weren't as honest as they would
+like them to be...</p>
+</li>
+</ul>
+<p>Now skimming through the project code, it's actually somewhat clean,
 well organized, and comes with a lot of unit/integration tests. But of
 course, being a young programmer at the time, I have also made quite a
 few beginner mistakes, like having useless comments that are pretty
 much repeats of the function names, or the lack of proper error
 handling, in some places I just catch the error, print it and continue
-execution.&lt;/p&gt;
-&lt;p&gt;Eventually, due to other interests and life commitments, I stopped
-working on it, but the things I&amp;rsquo;ve learned from it has stayed me
-throughout my career:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t be afraid of doing things you don&amp;rsquo;t know how to do (yet)&lt;/strong&gt;.
+execution.</p>
+<p>Eventually, due to other interests and life commitments, I stopped
+working on it, but the things I've learned from it has stayed me
+throughout my career:</p>
+<ul>
+<li>
+<p><strong>Don't be afraid of doing things you don't know how to do (yet)</strong>.
 I had no idea on how to do any of things when I first started, but
 it was the desire and willingness to learn that helped me figure
 things out along the way, and that has also helped improve my
-research and problem solving skills.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Think before you code&lt;/strong&gt;. I spent a lot of time thinking about how
+research and problem solving skills.</p>
+</li>
+<li>
+<p><strong>Think before you code</strong>. I spent a lot of time thinking about how
 to architect the features, I remembered I stopped coding for days
 and spent the time thinking how to make the core of the code base
 extensible, once I figured it out, I was able to add new features in
 very short amount of time. So sometimes you need to slow down so you
-can go faster later.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Best way to learn is by doing&lt;/strong&gt;. If you want to be good at
-something you have to practice and practice. You can&amp;rsquo;t learn to ride
-a bike by just reading about it.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Don&#39;t Pass Control Flags Downward</title>
-      <link>https://lae.nz/posts/dont-pass-control-flags-downward/</link>
-      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://lae.nz/posts/dont-pass-control-flags-downward/</guid>
-      <description>&lt;p&gt;This is tip 6.2 from 
-&lt;a href=&#34;https://thinking-forth.sourceforge.net&#34; &gt;Thinking Forth&lt;/a&gt;
-.&lt;/p&gt;
-&lt;p&gt;Suppose we have the some code that looks like the following:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;Window&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;setVisible&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;boolean&lt;/span&gt; show&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;show&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// ... show the window
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// ... hide the window
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...&lt;/span&gt; args&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  var window &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  window&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;setVisible&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// ... do something, then:
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt;  window&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;setVisible&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We know exactly when the window should be shown/hidden at compile
-time, so the calls to &lt;code&gt;setVisible(boolean)&lt;/code&gt; are asking the program to
-make pointless decisions at run time. It also makes the &lt;code&gt;setVisible&lt;/code&gt;
+can go faster later.</p>
+</li>
+<li>
+<p><strong>Best way to learn is by doing</strong>. If you want to be good at
+something you have to practice and practice. You can't learn to ride
+a bike by just reading about it.</p>
+</li>
+</ul>
+</div></content></entry><entry><id>https://lae.nz/posts/2023-09-24-dont-pass-control-flags-downward.html</id><link href="https://lae.nz/posts/2023-09-24-dont-pass-control-flags-downward.html"/><title>Don't Pass Control Flags Downward</title><updated>2023-09-24T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>Don't Pass Control Flags Downward</h1>
+<p>This is tip 6.2 from <a href="https://thinking-forth.sourceforge.net">Thinking Forth</a>.</p>
+<p>Suppose we have the some code that looks like the following:</p>
+<pre><code class="language-java">class Window {
+  void setVisible(boolean show) {
+    if (show) {
+      // ... show the window
+    } else {
+      // ... hide the window
+    }
+  }
+}
+
+static void main(String... args) {
+  var window = ...
+  window.setVisible(true);
+  // ... do something, then:
+  window.setVisible(false);
+}
+</code></pre>
+<p>We know exactly when the window should be shown/hidden at compile
+time, so the calls to <code>setVisible(boolean)</code> are asking the program to
+make pointless decisions at run time. It also makes the <code>setVisible</code>
 function trying to do two jobs, show and hide the window, which
-violates the single responsibility principle.&lt;/p&gt;
-&lt;p&gt;So it would be better to just spell out exactly what our intentions are:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;Window&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;show&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;hide&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...&lt;/span&gt; args&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  var window &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  window&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;show&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// ... do something, then:
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt;  window&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;hide&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>When Black Magic Fails Silently</title>
-      <link>https://lae.nz/posts/when-black-magic-fails-silently/</link>
-      <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://lae.nz/posts/when-black-magic-fails-silently/</guid>
-      <description>&lt;p&gt;Sometimes you run into black magic in a code base, the sort of thing
-that works but you don&amp;rsquo;t really know why, but you can accept it and
-move on, because it all just work.&lt;/p&gt;
-&lt;p&gt;Except when it shoots you in the foot to remind you it doesn&amp;rsquo;t always
-work as advertised. If you are lucky, you&amp;rsquo;ll get a big error screaming
+violates the single responsibility principle.</p>
+<p>So it would be better to just spell out exactly what our intentions are:</p>
+<pre><code class="language-java">class Window {
+  void show() {}
+  void hide() {}
+}
+
+static void main(String... args) {
+  var window = ...
+  window.show();
+  // ... do something, then:
+  window.hide();
+}
+</code></pre>
+</div></content></entry><entry><id>https://lae.nz/posts/2023-01-27-when-black-magic-fails-silently.html</id><link href="https://lae.nz/posts/2023-01-27-when-black-magic-fails-silently.html"/><title>When Black Magic Fails Silently</title><updated>2023-01-27T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>When Black Magic Fails Silently</h1>
+<p>Sometimes you run into black magic in a code base, the sort of thing
+that works but you don't really know why, but you can accept it and
+move on, because it all just work.</p>
+<p>Except when it shoots you in the foot to remind you it doesn't always
+work as advertised. If you are lucky, you'll get a big error screaming
 in your face, but often you are not that luckily, it breaks things
-silently and carries on.&lt;/p&gt;
-&lt;p&gt;Take Spring for example, a popular framework in the Java world. Say
+silently and carries on.</p>
+<p>Take Spring for example, a popular framework in the Java world. Say
 you want to run some code within a database transaction, you often
-just annotate the method with &lt;code&gt;@Transactional&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#3c5d5d;font-weight:bold&#34;&gt;@Service&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;UserService&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#3c5d5d;font-weight:bold&#34;&gt;@Transactional&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;updateDetails&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// ...
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When &lt;code&gt;updateDetails()&lt;/code&gt; is call by some other class, it will run
-magically inside a transaction. But if it&amp;rsquo;s calls from some method
+just annotate the method with <code>@Transactional</code>:</p>
+<pre><code class="language-java">@Service
+class UserService {
+  @Transactional
+  void updateDetails() {
+    // ...
+  }
+}
+</code></pre>
+<p>When <code>updateDetails()</code> is call by some other class, it will run
+magically inside a transaction. But if it's calls from some method
 within the same class, it will silently run the method without a
 transaction (this is the default behaviour unless you change it),
 resulting in bad data integrity - one of the worst things you would
 want to have in a production database, especially if your system deals
-with financial transactions.&lt;/p&gt;
-&lt;p&gt;Another example is that, you may want to perform some common
-validations for your service parameters:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#3c5d5d;font-weight:bold&#34;&gt;@Service&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;UserService&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;updateName&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#3c5d5d;font-weight:bold&#34;&gt;@NotEmpty&lt;/span&gt; String name&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// ...
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This won&amp;rsquo;t work because you forgot to annotate the class with
-&lt;code&gt;@Validated&lt;/code&gt; (which is easily missed if your class already has half a
+with financial transactions.</p>
+<p>Another example is that, you may want to perform some common
+validations for your service parameters:</p>
+<pre><code class="language-java">@Service
+class UserService {
+  void updateName(@NotEmpty String name) {
+    // ...
+  }
+}
+</code></pre>
+<p>This won't work because you forgot to annotate the class with
+<code>@Validated</code> (which is easily missed if your class already has half a
 dozen annotations), so again it will silently do nothing and the
 method will happily accept invalid input, or worse, causing security
-issues.&lt;/p&gt;
-&lt;p&gt;Yet another example, you want to listen to certain events and want to
+issues.</p>
+<p>Yet another example, you want to listen to certain events and want to
 perform some action after the associated database transaction commits
-successfully:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;UserEventListener&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#3c5d5d;font-weight:bold&#34;&gt;@TransactionalEventListener&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;onEvent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;UserUpdated event&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// ...
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This works until you want to write to the database within the event
+successfully:</p>
+<pre><code class="language-java">class UserEventListener {
+  @TransactionalEventListener
+  void onEvent(UserUpdated event) {
+    // ...
+  }
+}
+</code></pre>
+<p>This works until you want to write to the database within the event
 method. Your writes will appear to return successfully, but in fact
 they are all dropped silently behind the scenes, and this is a
-documented expected behaviour. Shocking.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Dependency Injection is Parameter Passing</title>
-      <link>https://lae.nz/posts/dependency-injection-is-parameter-passing/</link>
-      <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://lae.nz/posts/dependency-injection-is-parameter-passing/</guid>
-      <description>&lt;p&gt;Dependency injection means that instead of a function reaching out to
+documented expected behaviour. Shocking.</p>
+</div></content></entry><entry><id>https://lae.nz/posts/2019-12-18-dependency-injection-is-parameter-passing.html</id><link href="https://lae.nz/posts/2019-12-18-dependency-injection-is-parameter-passing.html"/><title>Dependency Injection is Parameter Passing</title><updated>2019-12-18T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>Dependency Injection is Parameter Passing</h1>
+<p>Dependency injection means that instead of a function reaching out to
 get its dependencies, it accepts the dependencies as parameters
 instead. A dependency may be an external service, or something that
-produces observable side effects, etc.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// Before
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;isBedTime&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    var clock &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; Clock&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;getSystemClock&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    var time &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; clock&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;now&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;return&lt;/span&gt; time&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;hour&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;=&lt;/span&gt; 23&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// After
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;isBedTime&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;Clock clock&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    var time &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; clock&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;now&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;return&lt;/span&gt; time&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;hour&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;=&lt;/span&gt; 23&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This make the function dumb (in a good way), and the dependencies
+produces observable side effects, etc.</p>
+<pre><code class="language-java">  // Before
+  static void isBedTime() {
+    var clock = Clock.getSystemClock();
+    var time = clock.now();
+    return time.hour() &gt;= 23;
+  }
+
+  // After
+  static void isBedTime(Clock clock) {
+    var time = clock.now();
+    return time.hour() &gt;= 23;
+  }
+</code></pre>
+<p>This make the function dumb (in a good way), and the dependencies
 clear to the caller. The parameters will typically be some abstract
 interfaces, and the concrete implementations can be swapped out to
 something different by different callers, such as be mocked out to
-make testing easy and deterministic. It&amp;rsquo;s simple and yet effective in
+make testing easy and deterministic. It's simple and yet effective in
 reducing the complexity of large and complex programs, as dependencies
-are being passed along instead of having &amp;lsquo;smart functions&amp;rsquo; that go out
-and grab things like a spider web.&lt;/p&gt;
-&lt;p&gt;One may notice doing things this way will cause some functions to
-start to have many parameters. This is a good thing to discovery, it&amp;rsquo;s
+are being passed along instead of having 'smart functions' that go out
+and grab things like a spider web.</p>
+<p>One may notice doing things this way will cause some functions to
+start to have many parameters. This is a good thing to discovery, it's
 helping to uncover that the function maybe doing too much, therefore
 some refactoring is needed to make it fall in line with the single
 responsibility principle, or the facade pattern is needed to be
 applied to encapsulate/simplify interactions with some of the
-underlying dependencies.&lt;/p&gt;
-&lt;p&gt;One may also notice that there are various dependency injection
+underlying dependencies.</p>
+<p>One may also notice that there are various dependency injection
 libraries out there, XML based, annotation based, using runtime
 reflection, or compile time generation, some may be technically
 interesting, but none are necessary, and just like every other code,
 they all have their own complexity and issues. Dependency injection at
-it&amp;rsquo;s core is just parameter passing, it&amp;rsquo;s dumb and simple, and that&amp;rsquo;s
-the way it should be. Less is more.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Pipeline from Input, or Pipeline to Output?</title>
-      <link>https://lae.nz/posts/pipeline-from-input-or-pipeline-to-output/</link>
-      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://lae.nz/posts/pipeline-from-input-or-pipeline-to-output/</guid>
-      <description>&lt;p&gt;Let say you are going to implement an HTTP service, we can post it a
+it's core is just parameter passing, it's dumb and simple, and that's
+the way it should be. Less is more.</p>
+</div></content></entry><entry><id>https://lae.nz/posts/2019-07-26-pipeline-from-input-or-pipeline-to-output.html</id><link href="https://lae.nz/posts/2019-07-26-pipeline-from-input-or-pipeline-to-output.html"/><title>Pipeline from Input, or Pipeline to Output?</title><updated>2019-07-26T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>Pipeline from Input, or Pipeline to Output?</h1>
+<p>Let say you are going to implement an HTTP service, we can post it a
 list of actions, it will perform those actions and return a list of
-results.&lt;/p&gt;
-&lt;p&gt;The first version is simple, read the actions, process them, then
-write the results.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;Action&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; actions &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  readAll&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;request&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;Result&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; results &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  invokeAll&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;actions&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;results&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;forEach&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;::&lt;/span&gt;write&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Everything seems to work fine but after a while clients are starting
-to get timeouts.&lt;/p&gt;
-&lt;p&gt;It turns out that some actions take longer time to complete, say about
+results.</p>
+<p>The first version is simple, read the actions, process them, then
+write the results.</p>
+<pre><code class="language-java">List&lt;Action&gt; actions =
+  readAll(request);
+
+List&lt;Result&gt; results =
+  invokeAll(actions);
+
+results.forEach(this::write);
+</code></pre>
+<p>Everything seems to work fine but after a while clients are starting
+to get timeouts.</p>
+<p>It turns out that some actions take longer time to complete, say about
 1 second, so if you send 10 of these actions to the service, it will
 take 10 seconds for the client to see the response after sending the
 request, because the service processes everything before sending the
 response. Imagine a client sends hundreds or thousands of actions in a
 request, it will take a very long time to see the first byte of the
 response. And because the client has set its read timeout to be less
-than that, it timed out.&lt;/p&gt;
-&lt;p&gt;Apart from increasing the client timeout, you decided to improve the
-service, turning it into a pipeline (&lt;code&gt;Stream&lt;/code&gt; is lazy sequence):&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Stream&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;Action&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; actions &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  read&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;request&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Stream&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;Result&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; results &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  actions&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;map&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;::&lt;/span&gt;invoke&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;results&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;forEach&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;::&lt;/span&gt;write&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It will now read, invoke, output each of the actions one at a time as
+than that, it timed out.</p>
+<p>Apart from increasing the client timeout, you decided to improve the
+service, turning it into a pipeline (<code>Stream</code> is lazy sequence):</p>
+<pre><code class="language-java">Stream&lt;Action&gt; actions =
+  read(request);
+
+Stream&lt;Result&gt; results =
+  actions.map(this::invoke);
+
+results.forEach(this::write);
+</code></pre>
+<p>It will now read, invoke, output each of the actions one at a time as
 a pipeline. Clients will see the results incrementally as they
 complete, no need to wait for everything to be processed first. And this
-keeps data flowing continuously, avoiding idle timeouts.&lt;/p&gt;
-&lt;p&gt;But then you remembered this is no good as it could cause 
-&lt;a href=&#34;https://lae.nz/posts/tcp-deadlock/&#34; &gt;TCP
-Deadlocks&lt;/a&gt;
-.&lt;/p&gt;
-&lt;p&gt;Now what other options are there? If a full pipeline is no good, maybe
-a partial pipeline would be okay?&lt;/p&gt;
-&lt;p&gt;For the next option, the service can pipeline from the input, but
+keeps data flowing continuously, avoiding idle timeouts.</p>
+<p>But then you remembered this is no good as it could cause <a href="https://lae.nz/posts/2019-07-25-tcp-deadlock.html">TCP
+Deadlocks</a>.</p>
+<p>Now what other options are there? If a full pipeline is no good, maybe
+a partial pipeline would be okay?</p>
+<p>For the next option, the service can pipeline from the input, but
 collect all the results into a list in memory, once complete, write
-them out.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Stream&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;Action&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; actions &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  read&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;request&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;Result&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; results &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  actions
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;map&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;::&lt;/span&gt;invoke&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;collect&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;toList&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;());&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;results&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;forEach&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;::&lt;/span&gt;write&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This means while the client sends the list of actions, the service
-reads and processes the actions one at a time, when the service can&amp;rsquo;t
+them out.</p>
+<pre><code class="language-java">Stream&lt;Action&gt; actions =
+  read(request);
+
+List&lt;Result&gt; results =
+  actions
+    .map(this::invoke)
+    .collect(toList());
+
+results.forEach(this::write);
+</code></pre>
+<p>This means while the client sends the list of actions, the service
+reads and processes the actions one at a time, when the service can't
 read fast enough because it encounters slow actions, TCP applies back
 pressure to the client, slowing down the rate which it sends data to
 the service. The client should see the response soon after it finishes
 sending a large request, as processing was done at the same time while
 the data was being sent to the service. And since it drains the input
-before output, it does not deadlock.&lt;/p&gt;
-&lt;p&gt;While this is a perfectly fine solution in many cases, in this
+before output, it does not deadlock.</p>
+<p>While this is a perfectly fine solution in many cases, in this
 specific case there is still a problem. Because TCP has buffers, when
 the client finishes sending and switches to waiting for the response,
 there maybe enough slow actions left in the buffers (especially with
 compression turned on) yet to be received and read by the service,
-enough to cause a read timeout.&lt;/p&gt;
-&lt;p&gt;How about another option, if instead all the actions are read into a
-list, then pipeline from processing to output?&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;Action&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; actions &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  readAll&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;request&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Stream&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;Result&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; results &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  actions
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;stream&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;map&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;::&lt;/span&gt;invoke&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;results&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;forEach&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;::&lt;/span&gt;write&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;With this, the service would finish loading all actions into memory
+enough to cause a read timeout.</p>
+<p>How about another option, if instead all the actions are read into a
+list, then pipeline from processing to output?</p>
+<pre><code class="language-java">List&lt;Action&gt; actions =
+  readAll(request);
+
+Stream&lt;Result&gt; results =
+  actions
+    .stream()
+    .map(this::invoke);
+
+results.forEach(this::write);
+</code></pre>
+<p>With this, the service would finish loading all actions into memory
 soon after the client finishes sending them, as request parsing is
 typically fast. Then the service starts processing and writing the
 results back one at a time, the client will see each result
 incrementally in the response stream. This way we avoids the request
-buffering issues with the previous approach.&lt;/p&gt;
-&lt;p&gt;Does this solve the problem then? Well, it depends. This approach,
+buffering issues with the previous approach.</p>
+<p>Does this solve the problem then? Well, it depends. This approach,
 like the deadlock prone implementation, requires the client to read
 the response output for the actual processing to happen (except for
 the first few, if their outputs fit into the TCP buffers). This may or
@@ -417,181 +337,160 @@ the HTTP response code be? If it relies on knowing the outcome of the
 actions, then this approach is a no go, since the response code is the
 first thing to be sent, it would be fine though if the response code
 is generic, and each result has their own result codes instead, again,
-depends on the requirements.&lt;/p&gt;
-&lt;p&gt;So it looks like there is not a satisfactory solution so far. There
+depends on the requirements.</p>
+<p>So it looks like there is not a satisfactory solution so far. There
 are other options though, but they will probably have their own set of
 trade offs. Sometimes there is just no perfect solution, but one can
-have options, and can pick one that has the best fit.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TCP Deadlock</title>
-      <link>https://lae.nz/posts/tcp-deadlock/</link>
-      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://lae.nz/posts/tcp-deadlock/</guid>
-      <description>&lt;p&gt;Let&amp;rsquo;s imagine an echo server implementation, where the server simply
+have options, and can pick one that has the best fit.</p>
+</div></content></entry><entry><id>https://lae.nz/posts/2019-07-25-tcp-deadlock.html</id><link href="https://lae.nz/posts/2019-07-25-tcp-deadlock.html"/><title>TCP Deadlock</title><updated>2019-07-25T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>TCP Deadlock</h1>
+<p>Let's imagine an echo server implementation, where the server simply
 takes the request input stream, copies the bytes to the response
-output stream.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s say a client starts sending bytes to the server, and the server
-starts writing the bytes out as soon as they come in, it&amp;rsquo;s pretty nice
-that the server doesn&amp;rsquo;t need to load the whole request first, which
-means the client can see the response quickly if it wishes to.&lt;/p&gt;
-&lt;p&gt;Except the client is still busy streaming the rest of bytes out to the
-server, so it&amp;rsquo;s not ready to read the response yet, even though the
-response data has already started to come in.&lt;/p&gt;
-&lt;p&gt;Meanwhile the server is still writing bytes out, all that has to go
-somewhere. First they arrive at the client&amp;rsquo;s TCP receive buffer,
-managed by the operating system, once that&amp;rsquo;s full, the client&amp;rsquo;s side
+output stream.</p>
+<p>Let's say a client starts sending bytes to the server, and the server
+starts writing the bytes out as soon as they come in, it's pretty nice
+that the server doesn't need to load the whole request first, which
+means the client can see the response quickly if it wishes to.</p>
+<p>Except the client is still busy streaming the rest of bytes out to the
+server, so it's not ready to read the response yet, even though the
+response data has already started to come in.</p>
+<p>Meanwhile the server is still writing bytes out, all that has to go
+somewhere. First they arrive at the client's TCP receive buffer,
+managed by the operating system, once that's full, the client's side
 of the TCP connection will tell the server side to stop sending, the
 server side TCP listens and stops sending data out the wire, anymore
 bytes written by the server will get placed onto the sending TCP
-buffer and stay there, once that&amp;rsquo;s full, any attempt to write will
-block, and since the server is blocked, it won&amp;rsquo;t read anything from
+buffer and stay there, once that's full, any attempt to write will
+block, and since the server is blocked, it won't read anything from
 the input anymore, so that direction of the buffers will get filled up
-too, and the client&amp;rsquo;s attempt to write will also block, now we have a
+too, and the client's attempt to write will also block, now we have a
 deadlock - the client is waiting for the server to free up the buffer,
-the server can&amp;rsquo;t do that because it&amp;rsquo;s waiting for the client to free
-up the buffer.&lt;/p&gt;
-&lt;p&gt;If you were monitoring your TCP Zero Windows you would see something
-like this, simplified:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% tcpdump &lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;tcp[14:2] = 0&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;... server &amp;gt; client: ... win &lt;span style=&#34;color:#099&#34;&gt;0&lt;/span&gt; ...
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;... client &amp;gt; server: ... win &lt;span style=&#34;color:#099&#34;&gt;0&lt;/span&gt; ...
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;... server &amp;gt; client: ... win &lt;span style=&#34;color:#099&#34;&gt;0&lt;/span&gt; ...
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;... client &amp;gt; server: ... win &lt;span style=&#34;color:#099&#34;&gt;0&lt;/span&gt; ...
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;... server &amp;gt; client: ... win &lt;span style=&#34;color:#099&#34;&gt;0&lt;/span&gt; ...
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Where &lt;code&gt;&#39;win 0&#39;&lt;/code&gt; is one side telling the other they have no room for
-anymore data.&lt;/p&gt;
-&lt;p&gt;So it turns out this simple echo server will deadlock given a large
+the server can't do that because it's waiting for the client to free
+up the buffer.</p>
+<p>If you were monitoring your TCP Zero Windows you would see something
+like this, simplified:</p>
+<pre><code class="language-sh">% tcpdump 'tcp[14:2] = 0'
+... server &gt; client: ... win 0 ...
+... client &gt; server: ... win 0 ...
+... server &gt; client: ... win 0 ...
+... client &gt; server: ... win 0 ...
+... server &gt; client: ... win 0 ...
+</code></pre>
+<p>Where <code>'win 0'</code> is one side telling the other they have no room for
+anymore data.</p>
+<p>So it turns out this simple echo server will deadlock given a large
 enough request. So to avoid deadlock it will have to consume the whole
 request first before sending the response, which will require placing
 a restriction on the size of the request. Unless you have full control
-of the client code and implement it with reading/writing in parallel.&lt;/p&gt;
-&lt;p&gt;In fact this problem isn&amp;rsquo;t specific to TCP, any program with similar
+of the client code and implement it with reading/writing in parallel.</p>
+<p>In fact this problem isn't specific to TCP, any program with similar
 IO structure will experience deadlock. For example, a parent process
 starts a child process and sends data to it while the child process is
-output data at the same time.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Principle of Least Astonishment, and Naming</title>
-      <link>https://lae.nz/posts/the-principle-of-least-astonishment-and-naming/</link>
-      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://lae.nz/posts/the-principle-of-least-astonishment-and-naming/</guid>
-      <description>&lt;p&gt;The Principle of Least Astonishment states that code should behave in
+output data at the same time.</p>
+</div></content></entry><entry><id>https://lae.nz/posts/2019-07-22-the-principle-of-least-astonishment-and-naming.html</id><link href="https://lae.nz/posts/2019-07-22-the-principle-of-least-astonishment-and-naming.html"/><title>The Principle of Least Astonishment, and Naming</title><updated>2019-07-22T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>The Principle of Least Astonishment, and Naming</h1>
+<p>The Principle of Least Astonishment states that code should behave in
 expected ways without hidden surprises. The following is an example of
-how improperly named things will introduce bugs into systems.&lt;/p&gt;
-&lt;p&gt;Given a list of players, each player has multiple games, we want to
-build a map from game IDs to game names. We could do so using a &lt;code&gt;Map&lt;/code&gt;
-and loops Java:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Map&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; String&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; games &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;var player &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; players&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;var game &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; player&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;games&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    games&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;put&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      game&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(),&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      game&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We could also do it using the stream API with the &lt;code&gt;toMap&lt;/code&gt; collector:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Map&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; String&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; games &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  players
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;stream&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;flatMap&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;Player&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;::&lt;/span&gt;games&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;collect&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;toMap&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      Game&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;::&lt;/span&gt;id&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      Game&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;::&lt;/span&gt;name
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;));&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Both seems reasonable and clear at first.&lt;/p&gt;
-&lt;p&gt;A &lt;code&gt;Map&lt;/code&gt; in Java doesn&amp;rsquo;t contain duplicates, when putting a key value
+how improperly named things will introduce bugs into systems.</p>
+<p>Given a list of players, each player has multiple games, we want to
+build a map from game IDs to game names. We could do so using a <code>Map</code>
+and loops Java:</p>
+<pre><code class="language-java">Map&lt;Integer, String&gt; games = ...;
+for (var player : players) {
+  for (var game : player.games()) {
+    games.put(
+      game.id(),
+      game.name()
+    );
+  }
+}
+</code></pre>
+<p>We could also do it using the stream API with the <code>toMap</code> collector:</p>
+<pre><code class="language-java">Map&lt;Integer, String&gt; games =
+  players
+    .stream()
+    .flatMap(Player::games)
+    .collect(toMap(
+      Game::id,
+      Game::name
+    ));
+</code></pre>
+<p>Both seems reasonable and clear at first.</p>
+<p>A <code>Map</code> in Java doesn't contain duplicates, when putting a key value
 into a map it will override existing mapping that has the same key,
 this is standard behavior and everybody expects it. So when multiple
 players share the same game, putting the same game ID to name mapping
-into a map has no effect.&lt;/p&gt;
-&lt;p&gt;However the &lt;code&gt;toMap&lt;/code&gt; collector breaks this expectation, it will throw
+into a map has no effect.</p>
+<p>However the <code>toMap</code> collector breaks this expectation, it will throw
 an exception if it sees duplicates, this is rather surprising given
-the name &lt;code&gt;toMap&lt;/code&gt; implies it would behave like a normal map would. As
+the name <code>toMap</code> implies it would behave like a normal map would. As
 more and more developers are refactoring loops into streams, hopefully
 this difference is caught during testing instead of things breaking in
-production.&lt;/p&gt;
-&lt;p&gt;The other problem is you tend to forget about things after a while, so
-you started to make the same mistake again by using &lt;code&gt;toMap&lt;/code&gt; thinking
+production.</p>
+<p>The other problem is you tend to forget about things after a while, so
+you started to make the same mistake again by using <code>toMap</code> thinking
 it behaves like a normal map, only to find yourself relearning the
 same lesson again, and again, when it surprises you by breaking
-things. Same goes for your friends.&lt;/p&gt;
-&lt;p&gt;It should have been given an abnormal name that fits with the abnormal
-behavior.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Mutable Constants</title>
-      <link>https://lae.nz/posts/mutable-constants/</link>
-      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://lae.nz/posts/mutable-constants/</guid>
-      <description>&lt;p&gt;Mutable constants are essentially constants initialized from mutable
-variables.&lt;/p&gt;
-&lt;p&gt;For example, a constant in code but initialized from an environment
+things. Same goes for your friends.</p>
+<p>It should have been given an abnormal name that fits with the abnormal
+behavior.</p>
+</div></content></entry><entry><id>https://lae.nz/posts/2019-07-17-mutable-constants.html</id><link href="https://lae.nz/posts/2019-07-17-mutable-constants.html"/><title>Mutable Constants</title><updated>2019-07-17T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>Mutable Constants</h1>
+<p>Mutable constants are essentially constants initialized from mutable
+variables.</p>
+<p>For example, a constant in code but initialized from an environment
 variable, which can be mutated before the constant is initialized to
-affect it&amp;rsquo;s value:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;final&lt;/span&gt; Language LANG &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Language&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;of&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;getEnv&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;LANG&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;));&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Another example, this time it isn&amp;rsquo;t a constant but it&amp;rsquo;s intended to be
-used like a constant after it&amp;rsquo;s initial value is set by some
-annotation processing library:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#3c5d5d;font-weight:bold&#34;&gt;@Environment&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;LANG&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;static&lt;/span&gt; Language LANG&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;static&lt;/span&gt; Language &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;lang&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;return&lt;/span&gt; LANG&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;There are undesired implications when code is written to use such
-constants.&lt;/p&gt;
-&lt;p&gt;Take the following program that produces different results based on
-the current &lt;code&gt;LANG&lt;/code&gt; environment variable:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;final&lt;/span&gt; Language LANG &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Language&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;of&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;getEnv&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;LANG&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;));&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;static&lt;/span&gt; String &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;greet&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;return&lt;/span&gt; LANG&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;translate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...&lt;/span&gt; args&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  println&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;greet&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;());&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It&amp;rsquo;s &lt;strong&gt;untestable&lt;/strong&gt; as you can&amp;rsquo;t unit test &lt;code&gt;greet()&lt;/code&gt; with different
-languages.  One may argue if &lt;code&gt;LANG&lt;/code&gt; is made to be non-final, you can
-change it&amp;rsquo;s value in unit tests in order to test the &lt;code&gt;greet()&lt;/code&gt;. This
-basically turns it into a global variable, which is bad on it&amp;rsquo;s own
-levels, introduces concurrency problems, and you wouldn&amp;rsquo;t be able to
-test &lt;code&gt;greet()&lt;/code&gt; with different languages &lt;strong&gt;in parallel&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;It also puts a &lt;strong&gt;hidden dependency&lt;/strong&gt; inside &lt;code&gt;greet()&lt;/code&gt; that drives it&amp;rsquo;s
-behavior, not clear to the caller when looking at it&amp;rsquo;s signature. In
-the above example, each time you run the program, &lt;code&gt;greet()&lt;/code&gt; may
-produce a different result even though it&amp;rsquo;s called with the same
-parameters (in this example, empty). It makes &lt;code&gt;greet()&lt;/code&gt; a bit magical,
-and that&amp;rsquo;s bad, a method&amp;rsquo;s return value should be driven by the input
-parameters, not by magic (There maybe exceptions, but this isn&amp;rsquo;t one
-of them).&lt;/p&gt;
-&lt;p&gt;Mutable constants should really be parameters instead:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;static&lt;/span&gt; String &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;greet&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;Language lang&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;return&lt;/span&gt; lang&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;translate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#900;font-weight:bold&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...&lt;/span&gt; args&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  var env &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; getEnv&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;LANG&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  var lang &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; Language&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;of&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;env&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  println&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;greet&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;lang&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;));&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This makes the code testable, testable in parallel, dependency is
-clear, non-magical.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+affect it's value:</p>
+<pre><code class="language-java">static final Language LANG =
+  Language.of(getEnv("LANG"));
+</code></pre>
+<p>Another example, this time it isn't a constant but it's intended to be
+used like a constant after it's initial value is set by some
+annotation processing library:</p>
+<pre><code class="language-java">@Environment("LANG")
+private static Language LANG;
+
+static Language lang() {
+  return LANG;
+}
+</code></pre>
+<p>There are undesired implications when code is written to use such
+constants.</p>
+<p>Take the following program that produces different results based on
+the current <code>LANG</code> environment variable:</p>
+<pre><code class="language-java">static final Language LANG =
+  Language.of(getEnv("LANG"));
+
+static String greet() {
+  return LANG.translate("Hello");
+}
+
+static void main(String... args) {
+  println(greet());
+}
+</code></pre>
+<p>It's <strong>untestable</strong> as you can't unit test <code>greet()</code> with different
+languages.  One may argue if <code>LANG</code> is made to be non-final, you can
+change it's value in unit tests in order to test the <code>greet()</code>. This
+basically turns it into a global variable, which is bad on it's own
+levels, introduces concurrency problems, and you wouldn't be able to
+test <code>greet()</code> with different languages <strong>in parallel</strong>.</p>
+<p>It also puts a <strong>hidden dependency</strong> inside <code>greet()</code> that drives it's
+behavior, not clear to the caller when looking at it's signature. In
+the above example, each time you run the program, <code>greet()</code> may
+produce a different result even though it's called with the same
+parameters (in this example, empty). It makes <code>greet()</code> a bit magical,
+and that's bad, a method's return value should be driven by the input
+parameters, not by magic (There maybe exceptions, but this isn't one
+of them).</p>
+<p>Mutable constants should really be parameters instead:</p>
+<pre><code class="language-java">static String greet(Language lang) {
+  return lang.translate("Hello");
+}
+
+static void main(String... args) {
+  var env = getEnv("LANG");
+  var lang = Language.of(env);
+  println(greet(lang));
+}
+</code></pre>
+<p>This makes the code testable, testable in parallel, dependency is
+clear, non-magical.</p>
+</div></content></entry></feed>

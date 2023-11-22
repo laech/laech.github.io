@@ -1,9 +1,4 @@
----
-title: TCP Deadlock
-date: 2019-07-25
-draft: false
-slug: tcp-deadlock
----
+# TCP Deadlock
 
 Let's imagine an echo server implementation, where the server simply
 takes the request input stream, copies the bytes to the response

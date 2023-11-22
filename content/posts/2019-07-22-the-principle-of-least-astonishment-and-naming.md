@@ -1,9 +1,4 @@
----
-title: The Principle of Least Astonishment, and Naming
-date: 2019-07-22
-draft: false
-slug: the-principle-of-least-astonishment-and-naming
----
+# The Principle of Least Astonishment, and Naming
 
 The Principle of Least Astonishment states that code should behave in
 expected ways without hidden surprises. The following is an example of

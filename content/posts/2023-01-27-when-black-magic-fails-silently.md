@@ -1,9 +1,4 @@
----
-title: When Black Magic Fails Silently
-date: 2023-01-27
-draft: false
-slug: when-black-magic-fails-silently
----
+# When Black Magic Fails Silently
 
 Sometimes you run into black magic in a code base, the sort of thing
 that works but you don't really know why, but you can accept it and
