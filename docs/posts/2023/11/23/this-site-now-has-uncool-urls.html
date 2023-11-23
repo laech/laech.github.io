@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="../../../../default.css"/>
+<title>This Site Now Has Uncool URLs</title>
+</head>
+<body><div id="nav"><p><a href="../../../../index.html">home</a>
+|
+<a href="../../../../index.xml">rss</a>
+|
+<a href="../../../../about.html">about</a>
+</p>
+</div>
+<div id="content"><h1>This Site Now Has Uncool URLs</h1>
+<p>W3C says that <a href="https://www.w3.org/Provider/Style/URI">cool URIs don't
+change</a>, and one of the
+suggestions is to leave the file name extension out of the URL. So
+&quot;/about&quot; instead of &quot;/about.html&quot;.</p>
+<p><a href="https://gohugo.io/">Hugo</a> also follows this advise and generates what
+it calls &quot;pretty&quot; URLs by default. So if you have &quot;content/about.md&quot;,
+it will generate &quot;/about/&quot; as the URL path, though there is an option
+called
+&quot;<a href="https://gohugo.io/content-management/urls/#appearance">uglyURLs</a>&quot;
+you can turn on to change it to generate &quot;/about.html&quot;.</p>
+<p>Cloudflare Pages is taking an even more opinionated approach
+(<a href="https://community.cloudflare.com/t/prevent-truncating-and-removal-of-page-name-extensions/388845">currently not
+configurable</a>),
+so if your site has &quot;/about.html&quot; and when a user visits that,
+Cloudflare will remove the extension and does a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/308">308 permanent
+redirect</a>
+to &quot;/about&quot;.</p>
+<p>It's generally good advice, as hiding the file extension means hiding
+away the implementation details, giving the server the flexibility to
+change how the page is generated whenever it wants, it could be static
+html files today, tomorrow it could be xhtml, or dynamically
+generated.</p>
+<p>However, as one may notice based of the URLs on this site, I have done
+quite the opposite, where every link has a file extension, because of
+the personal desire of wanting to make this site as static as
+possible, where everything is a file and is statically/relatively
+linked together. The end result is that it is now truly server-less,
+you can download the whole thing and open the local pages with a
+browser, and it will look exactly the same, with all links working
+correctly, without serving it through a server. This is actually how I
+use it too when writing.</p>
+</div>
+</body>
+</html>

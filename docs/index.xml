@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><id>https://lae.nz/</id><title>Lae's Blog</title><link href="https://lae.nz/"/><link href="https://lae.nz/index.xml" rel="self"/><updated>2023-10-19T00:00:00Z</updated><author><name>Lae Chen</name></author><entry><id>https://lae.nz/posts/2023/10/19/ubuntu-8-04.html</id><link href="https://lae.nz/posts/2023/10/19/ubuntu-8-04.html"/><title>Ubuntu 8.04</title><updated>2023-10-19T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>Ubuntu 8.04</h1>
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><id>https://lae.nz/</id><title>Lae's Blog</title><link href="https://lae.nz/"/><link href="https://lae.nz/index.xml" rel="self"/><updated>2023-11-23T00:00:00Z</updated><author><name>Lae Chen</name></author><entry><id>https://lae.nz/posts/2023/11/23/this-site-now-has-uncool-urls.html</id><link href="https://lae.nz/posts/2023/11/23/this-site-now-has-uncool-urls.html"/><title>This Site Now Has Uncool URLs</title><updated>2023-11-23T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>This Site Now Has Uncool URLs</h1>
+<p>W3C says that <a href="https://www.w3.org/Provider/Style/URI">cool URIs don't
+change</a>, and one of the
+suggestions is to leave the file name extension out of the URL. So
+"/about" instead of "/about.html".</p>
+<p><a href="https://gohugo.io/">Hugo</a> also follows this advise and generates what
+it calls "pretty" URLs by default. So if you have "content/about.md",
+it will generate "/about/" as the URL path, though there is an option
+called
+"<a href="https://gohugo.io/content-management/urls/#appearance">uglyURLs</a>"
+you can turn on to change it to generate "/about.html".</p>
+<p>Cloudflare Pages is taking an even more opinionated approach
+(<a href="https://community.cloudflare.com/t/prevent-truncating-and-removal-of-page-name-extensions/388845">currently not
+configurable</a>),
+so if your site has "/about.html" and when a user visits that,
+Cloudflare will remove the extension and does a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/308">308 permanent
+redirect</a>
+to "/about".</p>
+<p>It's generally good advice, as hiding the file extension means hiding
+away the implementation details, giving the server the flexibility to
+change how the page is generated whenever it wants, it could be static
+html files today, tomorrow it could be xhtml, or dynamically
+generated.</p>
+<p>However, as one may notice based of the URLs on this site, I have done
+quite the opposite, where every link has a file extension, because of
+the personal desire of wanting to make this site as static as
+possible, where everything is a file and is statically/relatively
+linked together. The end result is that it is now truly server-less,
+you can download the whole thing and open the local pages with a
+browser, and it will look exactly the same, with all links working
+correctly, without serving it through a server. This is actually how I
+use it too when writing.</p>
+</div></content></entry><entry><id>https://lae.nz/posts/2023/10/19/ubuntu-8-04.html</id><link href="https://lae.nz/posts/2023/10/19/ubuntu-8-04.html"/><title>Ubuntu 8.04</title><updated>2023-10-19T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>Ubuntu 8.04</h1>
 <p>2023-10-19</p>
 <p>Back in the days when new versions of Ubuntu were being released, you
 can actually request an installation CD to be sent to you, and
