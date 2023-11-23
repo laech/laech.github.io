@@ -16,6 +16,7 @@ import Control.Exception (throwIO)
 import Control.Monad (join, unless)
 import Control.Monad.IO.Class (MonadIO, liftIO)
 import Data.Foldable (find)
+import Data.Function (on)
 import Data.Functor (($>))
 import Data.List qualified as List
 import Data.Map qualified as Map
@@ -104,10 +105,10 @@ data ProcessResult = ProcessResult
 instance Semigroup ProcessResult where
   x <> y =
     ProcessResult
-      { postEntries = Set.union x.postEntries y.postEntries,
+      { postEntries = (Set.union `on` postEntries) x y,
         recentPosts =
           Set.take recentPostsLimit $
-            Set.union x.recentPosts y.recentPosts
+            (Set.union `on` recentPosts) x y
       }
 
 instance Monoid ProcessResult where
@@ -144,17 +145,11 @@ processResource = \case
   PageRef page -> processMarkdown page $> mempty
   PostRef post@Post {date} -> do
     page@Page {title, paths = Paths {outputFile}} <- processMarkdown post.page
+    let link = Text.pack $ makeRelative outputDir outputFile
     pure $
       ProcessResult
-        { recentPosts = Set.singleton (post {page}),
-          postEntries =
-            Set.singleton
-              ( PostEntry
-                  { date,
-                    title,
-                    link = Text.pack $ makeRelative outputDir outputFile
-                  }
-              )
+        { recentPosts = Set.singleton post {page},
+          postEntries = Set.singleton PostEntry {date, title, link}
         }
 
 processStatic :: (MonadIO m) => Paths -> m ()
@@ -256,13 +251,14 @@ buildAtomFeed posts = liftIO $ do
             ^{entries}
           |]
 
-    buildEntry (Post {date, page = Page {title, doc, paths = Paths {outputFile}}}) = do
+    buildEntry (Post {date, page = page@Page {title, paths = Paths {outputFile}}}) = do
       let link = (blogLink <>) . Text.pack $ makeRelative outputDir outputFile
       let updated = Text.pack . iso8601Show $ UTCTime date 0
+      doc <- mdMapLinkM (pure . rewriteLink outputFile) page.doc
       content <-
         either throwIO pure . Xml.parseText Xml.def . LText.fromStrict $
           "<div>"
-            <> CMark.nodeToHtml [] (mdToNode $ rewrite outputFile doc)
+            <> CMark.nodeToHtml [] (mdToNode doc)
             <> "</div>"
       pure
         [xml|
@@ -276,13 +272,8 @@ buildAtomFeed posts = liftIO $ do
                 ^{content.documentRoot.elementNodes}
         |]
 
-    rewrite outputFile = fmap $ \case
-      CMark.LINK url title -> CMark.LINK (rewriteLink outputFile url) title
-      CMark.IMAGE url title -> CMark.IMAGE (rewriteLink outputFile url) title
-      x -> x
-
     rewriteLink outputFile url =
-      if "://" `Text.isInfixOf` url
+      if ":" `Text.isInfixOf` url
         then url
         else
           blogLink
