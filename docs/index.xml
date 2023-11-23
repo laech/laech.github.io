@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><id>https://lae.nz/</id><title>Lae's Blog</title><link href="https://lae.nz/"/><link href="https://lae.nz/index.xml" rel="self"/><updated>2023-11-23T00:00:00Z</updated><author><name>Lae Chen</name></author><entry><id>https://lae.nz/posts/2023/11/23/this-site-now-has-uncool-urls.html</id><link href="https://lae.nz/posts/2023/11/23/this-site-now-has-uncool-urls.html"/><title>This Site Now Has Uncool URLs</title><updated>2023-11-23T00:00:00Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h1>This Site Now Has Uncool URLs</h1>
+<p>2023-11-23</p>
 <p>W3C says that <a href="https://www.w3.org/Provider/Style/URI">cool URIs don't
 change</a>, and one of the
 suggestions is to leave the file name extension out of the URL. So
