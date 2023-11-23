@@ -187,7 +187,7 @@ htmlTemplate outputFile title content = docTypeHtml $ do
   [xshamlet|
     <head>
       <meta charset="utf-8">
-      <meta content="width=device-width,initial-scale=1">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
       <link rel="stylesheet" type="text/css" href=#{pathToRoot </> "default.css"}>
       <title>#{title}
     <body>
