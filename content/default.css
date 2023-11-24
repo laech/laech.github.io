@@ -4,12 +4,11 @@ body {
   margin: auto;
   padding-bottom: 3rem;
   font-size: 1.1em;
-  font-family: Georgia, 'Noto Serif', 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Noto Serif', serif;
 }
 
-.title {
+h1 {
   padding-top: 0.5em;
-  padding-bottom: 0.5em;
 }
 
 p {
@@ -19,18 +18,12 @@ p {
 table.posts td {
   padding-top: 0.3em;
   padding-bottom: 0.3em;
-}
-
-table.posts .date {
-  padding-right: 0.5em;
   vertical-align: top;
-  white-space: nowrap;
 }
 
-p.date {
-  margin-top: 3em;
-  margin-right: 1em;
-  text-align: right;
+table.posts time {
+  padding-right: 0.5em;
+  white-space: nowrap;
 }
 
 img {
@@ -42,9 +35,4 @@ blockquote {
   border-left: 5px solid #ccc;
   margin: 1em;
   padding: 0 1em;
-}
-
-figure.inline {
-  display: inline;
-  margin: 0;
 }
