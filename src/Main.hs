@@ -43,7 +43,7 @@ import System.FilePath
     (</>),
   )
 import Text.Blaze.Html.Renderer.Text (renderHtml)
-import Text.Blaze.Html5 (Html, docTypeHtml, preEscapedToHtml)
+import Text.Blaze.Html5 (Html, preEscapedToHtml)
 import Text.Hamlet (xshamlet)
 import Text.Hamlet.XML (xml)
 import Text.XML qualified as Xml
@@ -183,22 +183,24 @@ processMarkdown page@Page {title, paths} = liftIO $ do
        in doesFileExist ref >>= flip unless (fail $ ref ++ " does not exits")
 
 htmlTemplate :: FilePath -> Text -> Html -> Html
-htmlTemplate outputFile title content = docTypeHtml $ do
+htmlTemplate outputFile title content =
   [xshamlet|
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <link rel="stylesheet" type="text/css" href=#{pathToRoot </> "default.css"}>
-      <title>#{title}
-    <body>
-      <div id="nav">
-        <p>
-          <a href=#{pathToRoot </> "index.html"}>home
-          |
-          <a href=#{pathToRoot </> "index.xml"}>rss
-          |
-          <a href=#{pathToRoot </> "about.html"}>about
-      <div id="content">#{content}
+    $doctype 5
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href=#{pathToRoot </> "default.css"}>
+        <title>#{title}
+      <body>
+        <div id="nav">
+          <p>
+            <a href=#{pathToRoot </> "index.html"}>home
+            |
+            <a href=#{pathToRoot </> "index.xml"}>rss
+            |
+            <a href=#{pathToRoot </> "about.html"}>about
+        <div id="content">#{content}
   |]
   where
     pathToRoot =
