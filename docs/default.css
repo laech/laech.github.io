@@ -1,3 +1,18 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1b1b1b;
+    color: white;
+  }
+
+  a {
+    color: #8cb4ff;
+  }
+
+  a:visited {
+    color: #ffadff;
+  }
+}
+
 body {
   width: 680px;
   max-width: 95%;
