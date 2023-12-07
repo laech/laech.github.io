@@ -49,10 +49,10 @@ import Text.Hamlet.XML (xml)
 import Text.XML qualified as Xml
 
 sourceDir :: FilePath
-sourceDir = "content"
+sourceDir = "../content"
 
 outputDir :: FilePath
-outputDir = "docs"
+outputDir = "../docs"
 
 blogTitle :: Text
 blogTitle = "<undefined>"
