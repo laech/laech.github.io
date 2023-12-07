@@ -55,7 +55,7 @@ outputDir :: FilePath
 outputDir = "docs"
 
 blogTitle :: Text
-blogTitle = "Lae's Blog"
+blogTitle = "<undefined>"
 
 blogLink :: Text
 blogLink = "https://lae.nz/"
@@ -199,7 +199,7 @@ htmlTemplate outputFile title content =
             |
             <a href=#{pathToRoot </> "index.xml"}>rss
             |
-            <a href=#{pathToRoot </> "about.html"}>about
+            <a href="mailto:Lae Chen<laec@proton.me>">contact
         <div id="content">#{content}
   |]
   where
