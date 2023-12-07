@@ -4,14 +4,15 @@
 <link rel="stylesheet" type="text/css" href="../../../../default.css"/>
 <title>TCP Deadlock</title>
 </head>
-<body><div id="nav"><p><a href="../../../../index.html">home</a>
-|
-<a href="../../../../index.xml">rss</a>
-|
-<a href="mailto:Lae Chen<laec@proton.me>">contact</a>
-</p>
-</div>
-<div id="content"><h1>TCP Deadlock</h1>
+<body><nav><ul><li><a href="../../../../index.html">home</a>
+</li>
+<li><a href="../../../../index.xml">rss</a>
+</li>
+<li><a href="mailto:Lae Chen<laec@proton.me>">contact</a>
+</li>
+</ul>
+</nav>
+<main><h1>TCP Deadlock</h1>
 <p>2019-07-25</p>
 <p>Let's imagine an echo server implementation, where the server simply
 takes the request input stream, copies the bytes to the response
@@ -56,6 +57,6 @@ of the client code and implement it with reading/writing in parallel.</p>
 IO structure will experience deadlock. For example, a parent process
 starts a child process and sends data to it while the child process is
 output data at the same time.</p>
-</div>
+</main>
 </body>
 </html>

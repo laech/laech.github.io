@@ -193,14 +193,16 @@ htmlTemplate outputFile title content =
         <link rel="stylesheet" type="text/css" href=#{pathToRoot </> "default.css"}>
         <title>#{title}
       <body>
-        <div id="nav">
-          <p>
-            <a href=#{pathToRoot </> "index.html"}>home
-            |
-            <a href=#{pathToRoot </> "index.xml"}>rss
-            |
-            <a href="mailto:Lae Chen<laec@proton.me>">contact
-        <div id="content">#{content}
+        <nav>
+          <ul>
+            <li>
+              <a href=#{pathToRoot </> "index.html"}>home
+            <li>
+              <a href=#{pathToRoot </> "index.xml"}>rss
+            <li>
+              <a href="mailto:Lae Chen<laec@proton.me>">contact
+        <main>
+          #{content}
   |]
   where
     pathToRoot =
