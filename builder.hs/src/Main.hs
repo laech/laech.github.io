@@ -200,7 +200,7 @@ htmlTemplate outputFile title content =
             <li>
               <a href=#{pathToRoot </> "index.xml"}>rss
             <li>
-              <a href="mailto:Lae Chen<laec@proton.me>">contact
+              <a href="mailto:Lae Chen&lt;laec@proton.me&gt;">contact
         <main>
           #{content}
   |]
