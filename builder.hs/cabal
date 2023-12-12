@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-set -o nounset
-set -o errexit
-
-cabal-3.6.2.0-p1 --with-compiler=ghc-9.4.7 "$@"

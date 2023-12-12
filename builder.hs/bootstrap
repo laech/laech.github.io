@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-set -o errexit
-set -o nounset
-
-ghcup install cabal 3.6.2.0-p1
-ghcup install ghc 9.4.7
