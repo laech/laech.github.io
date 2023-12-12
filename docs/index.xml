@@ -72,17 +72,16 @@ tests, reading about good coding practices and applying them on the
 project, purely for fun, I loved it, and I had learned so much in the
 process.</p>
 <p>It was called Rabbit (I couldn't think of better names at the time), a
-plugin for <a href="https://www.eclipse.org/ide/">the Eclipse IDE</a>, hosted on
-Google Code with SVN, later moved to Git (<a href="https://code.google.com/archive/p/rabbit-eclipse/">Google Code archive
-here</a>, <a href="https://github.com/laech/eclipse-rabbit">GitHub
-archive here</a>), it tracks
-statistics on what functionalities you use and how you spent your time
-in the IDE. For example, how often you use each command, how much time
-you spent editing each file, it even tracks how much time you spent
-writing each Java function (I was quite proud of that feature). The
-user interface was also pretty awesome, it lets you specify a date
-range for the data to view, allows you to aggregate the data in a few
-different ways, and draws a bar graph on the side for visualization.</p>
+plugin for <a href="https://www.eclipse.org/ide/">the Eclipse IDE</a>, <a href="https://code.google.com/archive/p/rabbit-eclipse/">hosted on
+Google Code</a> with
+SVN, later moved to Git, it tracks statistics on what functionalities
+you use and how you spent your time in the IDE. For example, how often
+you use each command, how much time you spent editing each file, it
+even tracks how much time you spent writing each Java function (I was
+quite proud of that feature). The user interface was also pretty
+awesome, it lets you specify a date range for the data to view, allows
+you to aggregate the data in a few different ways, and draws a bar
+graph on the side for visualization.</p>
 <p>Here are some historical screenshots (all stats shown are actual stats
 of me spent working on the project):</p>
 <p><img alt="Rabbit Sessions" src="https://lae.nz/posts/2023/10/12/rabbit-sessions.png"/></p>

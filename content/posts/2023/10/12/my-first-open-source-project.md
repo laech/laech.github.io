@@ -18,17 +18,16 @@ project, purely for fun, I loved it, and I had learned so much in the
 process.
 
 It was called Rabbit (I couldn't think of better names at the time), a
-plugin for [the Eclipse IDE](https://www.eclipse.org/ide/), hosted on
-Google Code with SVN, later moved to Git ([Google Code archive
-here](https://code.google.com/archive/p/rabbit-eclipse/), [GitHub
-archive here](https://github.com/laech/eclipse-rabbit)), it tracks
-statistics on what functionalities you use and how you spent your time
-in the IDE. For example, how often you use each command, how much time
-you spent editing each file, it even tracks how much time you spent
-writing each Java function (I was quite proud of that feature). The
-user interface was also pretty awesome, it lets you specify a date
-range for the data to view, allows you to aggregate the data in a few
-different ways, and draws a bar graph on the side for visualization.
+plugin for [the Eclipse IDE](https://www.eclipse.org/ide/), [hosted on
+Google Code](https://code.google.com/archive/p/rabbit-eclipse/) with
+SVN, later moved to Git, it tracks statistics on what functionalities
+you use and how you spent your time in the IDE. For example, how often
+you use each command, how much time you spent editing each file, it
+even tracks how much time you spent writing each Java function (I was
+quite proud of that feature). The user interface was also pretty
+awesome, it lets you specify a date range for the data to view, allows
+you to aggregate the data in a few different ways, and draws a bar
+graph on the side for visualization.
 
 Here are some historical screenshots (all stats shown are actual stats
 of me spent working on the project):
