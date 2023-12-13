@@ -1,7 +1,5 @@
 # Don't Pass Control Flags Downward
 
-2023-09-24
-
 This is tip 6.2 from [Thinking Forth](https://thinking-forth.sourceforge.net).
 
 Suppose we have the some code that looks like the following:

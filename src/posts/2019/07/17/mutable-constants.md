@@ -1,7 +1,5 @@
 # Mutable Constants
 
-2019-07-17
-
 Mutable constants are essentially constants initialized from mutable
 variables.
 

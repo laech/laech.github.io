@@ -1,7 +1,5 @@
 # The Principle of Least Astonishment, and Naming
 
-2019-07-22
-
 The Principle of Least Astonishment states that code should behave in
 expected ways without hidden surprises. The following is an example of
 how improperly named things will introduce bugs into systems.

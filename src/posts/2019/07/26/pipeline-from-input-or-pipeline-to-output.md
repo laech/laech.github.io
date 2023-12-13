@@ -1,7 +1,5 @@
 # Pipeline from Input, or Pipeline to Output?
 
-2019-07-26
-
 Let say you are going to implement an HTTP service, we can post it a
 list of actions, it will perform those actions and return a list of
 results.

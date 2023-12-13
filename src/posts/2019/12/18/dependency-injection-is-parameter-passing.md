@@ -1,7 +1,5 @@
 # Dependency Injection is Parameter Passing
 
-2019-12-18
-
 Dependency injection means that instead of a function reaching out to
 get its dependencies, it accepts the dependencies as parameters
 instead. A dependency may be an external service, or something that

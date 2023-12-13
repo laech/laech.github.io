@@ -1,7 +1,5 @@
 # When Black Magic Fails Silently
 
-2023-01-27
-
 Sometimes you run into black magic in a code base, the sort of thing
 that works but you don't really know why, but you can accept it and
 move on, because it all just work.

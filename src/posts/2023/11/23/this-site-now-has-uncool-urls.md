@@ -1,7 +1,5 @@
 # This Site Now Has Uncool URLs
 
-2023-11-23
-
 W3C says that [cool URIs don't
 change](https://www.w3.org/Provider/Style/URI), and one of the
 suggestions is to leave the file name extension out of the URL. So

@@ -1,7 +1,5 @@
 # My First Open Source Project
 
-2023-10-12
-
 Back in early 2010, when I was fresh out of university, and was still
 looking for my first programming job, I started working on my very
 first open source project. It was inspired by the last year group

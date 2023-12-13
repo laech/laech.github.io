@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<link rel="stylesheet" type="text/css" href="../../../../default.css"/>
-<title>TCP Deadlock</title>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="../../../../default.css" />
+  <title>TCP Deadlock</title>
 </head>
-<body><nav><ul><li><a href="../../../../index.html">home</a>
-</li>
-<li><a href="../../../../index.xml">rss</a>
-</li>
-<li><a href="mailto:Lae Chen&lt;laec@proton.me&gt;">contact</a>
-</li>
-</ul>
-</nav>
-<main><h1>TCP Deadlock</h1>
-<p>2019-07-25</p>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="../../../../index.html">home</a></li>
+      <li><a href="../../../../index.xml">rss</a></li>
+      <li><a href="mailto:Lae Chen&lt;laec@proton.me&gt;">contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>TCP Deadlock</h1>
 <p>Let's imagine an echo server implementation, where the server simply
 takes the request input stream, copies the bytes to the response
 output stream.</p>
@@ -57,6 +61,10 @@ of the client code and implement it with reading/writing in parallel.</p>
 IO structure will experience deadlock. For example, a parent process
 starts a child process and sends data to it while the child process is
 output data at the same time.</p>
-</main>
+    <p>
+      <time itemprop="datePublished" datetime="2019-07-25">2019-07-25</time>
+    </p>
+  </main>
 </body>
+
 </html>
