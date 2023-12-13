@@ -35,6 +35,11 @@ nav li+li::before {
   content: " | ";
 }
 
+nav li img.feed {
+  top: 2px;
+  position: relative;
+}
+
 h1 {
   padding-top: 0.5em;
 }
