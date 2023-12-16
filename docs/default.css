@@ -51,21 +51,17 @@ p {
 ul.posts {
   list-style-type: none;
   padding: 0;
-  display: table;
 }
 
 ul.posts li {
-  display: table-row;
-}
-
-ul.posts li>* {
-  display: table-cell;
+  display: flex;
   padding: 6px 0;
 }
 
 ul.posts li time {
-  width: 90px;
+  min-width: 90px;
   font-size: 90%;
+  margin-top: 2px;
 }
 
 img {
