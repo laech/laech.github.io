@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="../../../../default.css" />
-  <link rel="alternative" type="application/atom+xml" title="Mutable Constants" href="../../../../index.xml" />
-  <title>Mutable Constants</title>
-</head>
-
-<body>
-  <nav>
-    <ul>
-      <li>
-        <a href="../../../../index.html">index</a>
-      </li>
-      <li>
-        <a href="../../../../index.xml">
-          <img class="feed" src="../../../../feed.png" title="feed" />
-        </a>
-      </li>
-      <li><a href="mailto:laec@proton.me">contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h1>Mutable Constants</h1>
-<p>Mutable constants are essentially constants initialized from mutable
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../../../../default.css" />
+    <link rel="alternative" type="application/atom+xml" title="Mutable Constants" href="../../../../index.xml" />
+    <title>Mutable Constants</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="../../../../index.html">index</a>
+        </li>
+        <li>
+          <a href="../../../../index.xml">
+            <img class="feed" src="../../../../feed.png" title="feed" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:laec@proton.me">contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Mutable Constants</h1>
+      <p>Mutable constants are essentially constants initialized from mutable
 variables.</p>
-<p>For example, a constant in code but initialized from an environment
+      <p>For example, a constant in code but initialized from an environment
 variable, which can be mutated before the constant is initialized to
 affect it's value:</p>
-<pre><code class="language-java">static final Language LANG =
-  Language.of(getEnv(&quot;LANG&quot;));
-</code></pre>
-<p>Another example, this time it isn't a constant but it's intended to be
+      <pre>
+        <code class="language-java">static final Language LANG =
+  Language.of(getEnv("LANG"));
+</code>
+      </pre>
+      <p>Another example, this time it isn't a constant but it's intended to be
 used like a constant after it's initial value is set by some
 annotation processing library:</p>
-<pre><code class="language-java">@Environment(&quot;LANG&quot;)
+      <pre>
+        <code class="language-java">@Environment("LANG")
 private static Language LANG;
 
 static Language lang() {
   return LANG;
 }
-</code></pre>
-<p>There are undesired implications when code is written to use such
+</code>
+      </pre>
+      <p>There are undesired implications when code is written to use such
 constants.</p>
-<p>Take the following program that produces different results based on
+      <p>Take the following program that produces different results based on
 the current <code>LANG</code> environment variable:</p>
-<pre><code class="language-java">static final Language LANG =
-  Language.of(getEnv(&quot;LANG&quot;));
+      <pre>
+        <code class="language-java">static final Language LANG =
+  Language.of(getEnv("LANG"));
 
 static String greet() {
-  return LANG.translate(&quot;Hello&quot;);
+  return LANG.translate("Hello");
 }
 
 static void main(String... args) {
   println(greet());
 }
-</code></pre>
-<p>It's <strong>untestable</strong> as you can't unit test <code>greet()</code> with different
+</code>
+      </pre>
+      <p>It's <strong>untestable</strong> as you can't unit test <code>greet()</code> with different
 languages.  One may argue if <code>LANG</code> is made to be non-final, you can
 change it's value in unit tests in order to test the <code>greet()</code>. This
 basically turns it into a global variable, which is bad on it's own
 levels, introduces concurrency problems, and you wouldn't be able to
 test <code>greet()</code> with different languages <strong>in parallel</strong>.</p>
-<p>It also puts a <strong>hidden dependency</strong> inside <code>greet()</code> that drives it's
+      <p>It also puts a <strong>hidden dependency</strong> inside <code>greet()</code> that drives it's
 behavior, not clear to the caller when looking at it's signature. In
 the above example, each time you run the program, <code>greet()</code> may
 produce a different result even though it's called with the same
@@ -72,23 +78,24 @@ parameters (in this example, empty). It makes <code>greet()</code> a bit magical
 and that's bad, a method's return value should be driven by the input
 parameters, not by magic (There maybe exceptions, but this isn't one
 of them).</p>
-<p>Mutable constants should really be parameters instead:</p>
-<pre><code class="language-java">static String greet(Language lang) {
-  return lang.translate(&quot;Hello&quot;);
+      <p>Mutable constants should really be parameters instead:</p>
+      <pre>
+        <code class="language-java">static String greet(Language lang) {
+  return lang.translate("Hello");
 }
 
 static void main(String... args) {
-  var env = getEnv(&quot;LANG&quot;);
+  var env = getEnv("LANG");
   var lang = Language.of(env);
   println(greet(lang));
 }
-</code></pre>
-<p>This makes the code testable, testable in parallel, dependency is
+</code>
+      </pre>
+      <p>This makes the code testable, testable in parallel, dependency is
 clear, non-magical.</p>
-    <p>
-      <time itemprop="datePublished" datetime="2019-07-17">2019-07-17</time>
-    </p>
-  </main>
-</body>
-
+      <p>
+        <time itemprop="datePublished" datetime="2019-07-17">2019-07-17</time>
+      </p>
+    </main>
+  </body>
 </html>

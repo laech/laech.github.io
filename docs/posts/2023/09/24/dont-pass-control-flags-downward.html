@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="../../../../default.css" />
-  <link rel="alternative" type="application/atom+xml" title="Don't Pass Control Flags Downward" href="../../../../index.xml" />
-  <title>Don't Pass Control Flags Downward</title>
-</head>
-
-<body>
-  <nav>
-    <ul>
-      <li>
-        <a href="../../../../index.html">index</a>
-      </li>
-      <li>
-        <a href="../../../../index.xml">
-          <img class="feed" src="../../../../feed.png" title="feed" />
-        </a>
-      </li>
-      <li><a href="mailto:laec@proton.me">contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h1>Don't Pass Control Flags Downward</h1>
-<p>This is tip 6.2 from <a href="https://thinking-forth.sourceforge.net">Thinking Forth</a>.</p>
-<p>Suppose we have the some code that looks like the following:</p>
-<pre><code class="language-java">class Window {
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../../../../default.css" />
+    <link rel="alternative" type="application/atom+xml" title="Don't Pass Control Flags Downward" href="../../../../index.xml" />
+    <title>Don't Pass Control Flags Downward</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="../../../../index.html">index</a>
+        </li>
+        <li>
+          <a href="../../../../index.xml">
+            <img class="feed" src="../../../../feed.png" title="feed" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:laec@proton.me">contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Don't Pass Control Flags Downward</h1>
+      <p>This is tip 6.2 from <a href="https://thinking-forth.sourceforge.net">Thinking Forth</a>.</p>
+      <p>Suppose we have the some code that looks like the following:</p>
+      <pre>
+        <code class="language-java">class Window {
   void setVisible(boolean show) {
     if (show) {
       // ... show the window
@@ -43,14 +44,16 @@ static void main(String... args) {
   // ... do something, then:
   window.setVisible(false);
 }
-</code></pre>
-<p>We know exactly when the window should be shown/hidden at compile
+</code>
+      </pre>
+      <p>We know exactly when the window should be shown/hidden at compile
 time, so the calls to <code>setVisible(boolean)</code> are asking the program to
 make pointless decisions at run time. It also makes the <code>setVisible</code>
 function trying to do two jobs, show and hide the window, which
 violates the single responsibility principle.</p>
-<p>So it would be better to just spell out exactly what our intentions are:</p>
-<pre><code class="language-java">class Window {
+      <p>So it would be better to just spell out exactly what our intentions are:</p>
+      <pre>
+        <code class="language-java">class Window {
   void show() {}
   void hide() {}
 }
@@ -61,11 +64,11 @@ static void main(String... args) {
   // ... do something, then:
   window.hide();
 }
-</code></pre>
-    <p>
-      <time itemprop="datePublished" datetime="2023-09-24">2023-09-24</time>
-    </p>
-  </main>
-</body>
-
+</code>
+      </pre>
+      <p>
+        <time itemprop="datePublished" datetime="2023-09-24">2023-09-24</time>
+      </p>
+    </main>
+  </body>
 </html>
