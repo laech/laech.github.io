@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">&lt;undefined&gt;</title>
   <id>https://lae.nz/</id>
@@ -6,13 +5,13 @@
   <author>
     <name>Lae Chen</name>
   </author>
-  <link href="https://lae.nz/" />
+  <link rel="alternate" href="https://lae.nz/" />
   <link rel="self" href="https://lae.nz/index.xml" />
   <entry>
     <id>https://lae.nz/posts/2023/11/23/this-site-now-has-uncool-urls.html</id>
     <title type="text">This Site Now Has Uncool URLs</title>
     <updated>2023-11-23T00:00:00Z</updated>
-    <link href="https://lae.nz/posts/2023/11/23/this-site-now-has-uncool-urls.html" />
+    <link rel="alternate" href="https://lae.nz/posts/2023/11/23/this-site-now-has-uncool-urls.html" />
     <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <h1>This Site Now Has Uncool URLs</h1>
@@ -58,7 +57,7 @@ use it too when writing.</p>
     <id>https://lae.nz/posts/2023/10/19/ubuntu-8-04.html</id>
     <title type="text">Ubuntu 8.04</title>
     <updated>2023-10-19T00:00:00Z</updated>
-    <link href="https://lae.nz/posts/2023/10/19/ubuntu-8-04.html" />
+    <link rel="alternate" href="https://lae.nz/posts/2023/10/19/ubuntu-8-04.html" />
     <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <h1>Ubuntu 8.04</h1>
@@ -109,7 +108,7 @@ and DuckDuckGo would just straight up refused to load.</p>
     <id>https://lae.nz/posts/2023/10/12/my-first-open-source-project.html</id>
     <title type="text">My First Open Source Project</title>
     <updated>2023-10-12T00:00:00Z</updated>
-    <link href="https://lae.nz/posts/2023/10/12/my-first-open-source-project.html" />
+    <link rel="alternate" href="https://lae.nz/posts/2023/10/12/my-first-open-source-project.html" />
     <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <h1>My First Open Source Project</h1>
@@ -219,7 +218,7 @@ a bike by just reading about it.</p>
     <id>https://lae.nz/posts/2023/09/24/dont-pass-control-flags-downward.html</id>
     <title type="text">Don't Pass Control Flags Downward</title>
     <updated>2023-09-24T00:00:00Z</updated>
-    <link href="https://lae.nz/posts/2023/09/24/dont-pass-control-flags-downward.html" />
+    <link rel="alternate" href="https://lae.nz/posts/2023/09/24/dont-pass-control-flags-downward.html" />
     <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <h1>Don't Pass Control Flags Downward</h1>
@@ -274,7 +273,7 @@ static void main(String... args) {
     <id>https://lae.nz/posts/2023/01/27/when-black-magic-fails-silently.html</id>
     <title type="text">When Black Magic Fails Silently</title>
     <updated>2023-01-27T00:00:00Z</updated>
-    <link href="https://lae.nz/posts/2023/01/27/when-black-magic-fails-silently.html" />
+    <link rel="alternate" href="https://lae.nz/posts/2023/01/27/when-black-magic-fails-silently.html" />
     <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <h1>When Black Magic Fails Silently</h1>
@@ -347,7 +346,7 @@ documented expected behaviour. Shocking.</p>
     <id>https://lae.nz/posts/2019/12/18/dependency-injection-is-parameter-passing.html</id>
     <title type="text">Dependency Injection is Parameter Passing</title>
     <updated>2019-12-18T00:00:00Z</updated>
-    <link href="https://lae.nz/posts/2019/12/18/dependency-injection-is-parameter-passing.html" />
+    <link rel="alternate" href="https://lae.nz/posts/2019/12/18/dependency-injection-is-parameter-passing.html" />
     <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <h1>Dependency Injection is Parameter Passing</h1>
@@ -402,7 +401,7 @@ the way it should be. Less is more.</p>
     <id>https://lae.nz/posts/2019/07/26/pipeline-from-input-or-pipeline-to-output.html</id>
     <title type="text">Pipeline from Input, or Pipeline to Output?</title>
     <updated>2019-07-26T00:00:00Z</updated>
-    <link href="https://lae.nz/posts/2019/07/26/pipeline-from-input-or-pipeline-to-output.html" />
+    <link rel="alternate" href="https://lae.nz/posts/2019/07/26/pipeline-from-input-or-pipeline-to-output.html" />
     <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <h1>Pipeline from Input, or Pipeline to Output?</h1>
@@ -524,7 +523,7 @@ have options, and can pick one that has the best fit.</p>
     <id>https://lae.nz/posts/2019/07/25/tcp-deadlock.html</id>
     <title type="text">TCP Deadlock</title>
     <updated>2019-07-25T00:00:00Z</updated>
-    <link href="https://lae.nz/posts/2019/07/25/tcp-deadlock.html" />
+    <link rel="alternate" href="https://lae.nz/posts/2019/07/25/tcp-deadlock.html" />
     <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <h1>TCP Deadlock</h1>
@@ -583,7 +582,7 @@ output data at the same time.</p>
     <id>https://lae.nz/posts/2019/07/22/the-principle-of-least-astonishment-and-naming.html</id>
     <title type="text">The Principle of Least Astonishment, and Naming</title>
     <updated>2019-07-22T00:00:00Z</updated>
-    <link href="https://lae.nz/posts/2019/07/22/the-principle-of-least-astonishment-and-naming.html" />
+    <link rel="alternate" href="https://lae.nz/posts/2019/07/22/the-principle-of-least-astonishment-and-naming.html" />
     <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <h1>The Principle of Least Astonishment, and Naming</h1>
@@ -646,7 +645,7 @@ behavior.</p>
     <id>https://lae.nz/posts/2019/07/17/mutable-constants.html</id>
     <title type="text">Mutable Constants</title>
     <updated>2019-07-17T00:00:00Z</updated>
-    <link href="https://lae.nz/posts/2019/07/17/mutable-constants.html" />
+    <link rel="alternate" href="https://lae.nz/posts/2019/07/17/mutable-constants.html" />
     <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <h1>Mutable Constants</h1>
