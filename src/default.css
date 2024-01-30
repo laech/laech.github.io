@@ -74,3 +74,14 @@ blockquote {
   margin: 1em;
   padding: 0 1em;
 }
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 6px;
+}

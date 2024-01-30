@@ -1,12 +1,195 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">&lt;undefined&gt;</title>
   <id>https://lae.nz/</id>
-  <updated>2023-11-23T00:00:00Z</updated>
+  <updated>2024-01-30T00:00:00Z</updated>
   <author>
     <name>Lae Chen</name>
   </author>
   <link rel="alternate" href="https://lae.nz/" />
   <link rel="self" href="https://lae.nz/index.xml" />
+  <entry>
+    <id>https://lae.nz/posts/2024/01/30/finding-my-cheapest-power-plan.html</id>
+    <title type="text">Finding My Cheapest Power Plan</title>
+    <updated>2024-01-30T00:00:00Z</updated>
+    <link rel="alternate" href="https://lae.nz/posts/2024/01/30/finding-my-cheapest-power-plan.html" />
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <h1>Finding My Cheapest Power Plan</h1>
+        <p>It's been a few years since I last switched power company, so I
+thought it's time to check things out again to see if I can save some
+electricity costs. But I didn't want to just go to each company's
+websites and compare the rates, I want to calculate the rates against
+my actual power usage to get the concrete costs for my specific usage
+pattern.</p>
+        <p>I'm currently with Electric Kiwi, and on my account page I can see a
+breakdown of my usages:</p>
+        <p>
+          <img src="https://lae.nz/posts/2024/01/30/ek-insights.png" alt="Electric Kiwi Insights" />
+        </p>
+        <p>To get the raw data behind this is fairly straight forward, with the
+help of the browser's dev tools, I can inspect the request being made,
+then change a few parameters and retrieve all my usage data for the
+whole of 2023. The JSON payload looks something like this:</p>
+        <pre>
+          <code class="language-json">{
+  "data": {
+    "usage": {
+      "2023-12-31": {
+        "intervals": {
+          "1": {
+            "consumption": "0.17",
+            "time": "12:00 AM",
+            ...
+          },
+          "2": {
+            "consumption": "0.10",
+            "time": "12:30 AM"
+            ...
+...
+</code>
+        </pre>
+        <p>It's essentially a list of half hour buckets of the whole of 2023. We
+can extract the bits we want with a little Python:</p>
+        <pre>
+          <code class="language-python">class HalfHourlyUsage(NamedTuple):
+    start: datetime
+    kwh: Decimal
+
+with open("half_hourly.json") as input:
+    data = json.load(input)
+
+half_hourly_usages = [
+    HalfHourlyUsage(
+        datetime.strptime(f"{date} {interval['time']}", "%Y-%m-%d %I:%M %p"),
+        Decimal(interval["consumption"]),
+    )
+    for date, usage in data["data"]["usage"].items()
+    for interval in usage["intervals"].values()
+]
+</code>
+        </pre>
+        <p>Which essentially gives us the start time of the half hour, and the
+amount of electricity used for that half hour in kWh:</p>
+        <pre>
+          <code>2023-12-10 23:00:00, 0.78
+2023-12-10 23:30:00, 1.27
+...
+</code>
+        </pre>
+        <p>Now with the data in hand, we can go through the power companies and
+calculate their advertised rates against this usage data. For example,
+given a company's low user plan, which has a daily fixed cost of
+$0.69, day rate of $0.3117/kWh, and night rate of $0.1507/kWh, we can
+calculate the total cost like so:</p>
+        <pre>
+          <code class="language-python">def calculate_cost(
+    usages: list[HalfHourlyUsage],
+    day_rate: Decimal,
+    kwh_rate: Callable[[datetime], Decimal],
+) -&gt; Decimal:
+    days_cost = day_rate * sum(
+        366 if calendar.isleap(year) else 365
+        for year in {usage.start.year for usage in usages}
+    )
+    kwhs_cost = sum([kwh_rate(usage.start) * usage.kwh for usage in usages])
+    return days_cost + kwhs_cost
+
+cost = calculate_cost(
+    half_hourly_usages,
+    day_rate=Decimal("0.69"),
+    kwh_rate=lambda time: Decimal("0.3117")
+    if 7 &lt;= time.hour &lt; 23
+    else Decimal("0.1507"),
+)
+</code>
+        </pre>
+        <p>After going through some calculations, here are the list of plans I've
+compared against my usage data for 2023, cost is the total cost for
+year 2023, sorted by lowest first:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Electric Kiwi, PowerShifter</td>
+              <td>$1,044.93</td>
+            </tr>
+            <tr>
+              <td>Electric Kiwi, Prepay 300</td>
+              <td>$1,065.79</td>
+            </tr>
+            <tr>
+              <td>Electric Kiwi, MoveMaster</td>
+              <td>$1,208.05</td>
+            </tr>
+            <tr>
+              <td>Contact Energy, Good Nights</td>
+              <td>$1,213.87</td>
+            </tr>
+            <tr>
+              <td>Contact Energy, Good Weekends</td>
+              <td>$1,263.42</td>
+            </tr>
+            <tr>
+              <td>Flick, Flat</td>
+              <td>$1,297.27</td>
+            </tr>
+            <tr>
+              <td>Powershop</td>
+              <td>$1,326.64</td>
+            </tr>
+            <tr>
+              <td>Frank Energy</td>
+              <td>$1,332.78</td>
+            </tr>
+            <tr>
+              <td>Electric Kiwi, Stay Ahead 200</td>
+              <td>$1,354.49</td>
+            </tr>
+            <tr>
+              <td>Flick, Off Peak</td>
+              <td>$1,368.08</td>
+            </tr>
+            <tr>
+              <td>Genesis, Energy Basic</td>
+              <td>$1,376.88</td>
+            </tr>
+            <tr>
+              <td>Genesis, Energy Plus</td>
+              <td>$1,392.48</td>
+            </tr>
+            <tr>
+              <td>Meridian, Simple</td>
+              <td>$1,449.76</td>
+            </tr>
+            <tr>
+              <td>Contact Energy, Basic</td>
+              <td>$1,461.11</td>
+            </tr>
+            <tr>
+              <td>Electric Kiwi, Kiwi</td>
+              <td>$1,471.59</td>
+            </tr>
+            <tr>
+              <td>Contact Energy, Broadband Bundle</td>
+              <td>$1,526.30</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>My current plan is Electric Kiwi Stay Ahead 200, if I switch to
+PowerShifter, it would be a saving of ~$300 per year, or ~23% cheaper.
+But PowerShifter requires switching broadband to them, I don't want to
+do that, so I'll probably go with Prepay 300 instead.</p>
+        <p>
+          <time itemprop="datePublished" datetime="2024-01-30">2024-01-30</time>
+        </p>
+      </div>
+    </content>
+  </entry>
   <entry>
     <id>https://lae.nz/posts/2023/11/23/this-site-now-has-uncool-urls.html</id>
     <title type="text">This Site Now Has Uncool URLs</title>
@@ -637,88 +820,6 @@ things. Same goes for your friends.</p>
 behavior.</p>
         <p>
           <time itemprop="datePublished" datetime="2019-07-22">2019-07-22</time>
-        </p>
-      </div>
-    </content>
-  </entry>
-  <entry>
-    <id>https://lae.nz/posts/2019/07/17/mutable-constants.html</id>
-    <title type="text">Mutable Constants</title>
-    <updated>2019-07-17T00:00:00Z</updated>
-    <link rel="alternate" href="https://lae.nz/posts/2019/07/17/mutable-constants.html" />
-    <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">
-        <h1>Mutable Constants</h1>
-        <p>Mutable constants are essentially constants initialized from mutable
-variables.</p>
-        <p>For example, a constant in code but initialized from an environment
-variable, which can be mutated before the constant is initialized to
-affect it's value:</p>
-        <pre>
-          <code class="language-java">static final Language LANG =
-  Language.of(getEnv("LANG"));
-</code>
-        </pre>
-        <p>Another example, this time it isn't a constant but it's intended to be
-used like a constant after it's initial value is set by some
-annotation processing library:</p>
-        <pre>
-          <code class="language-java">@Environment("LANG")
-private static Language LANG;
-
-static Language lang() {
-  return LANG;
-}
-</code>
-        </pre>
-        <p>There are undesired implications when code is written to use such
-constants.</p>
-        <p>Take the following program that produces different results based on
-the current <code>LANG</code> environment variable:</p>
-        <pre>
-          <code class="language-java">static final Language LANG =
-  Language.of(getEnv("LANG"));
-
-static String greet() {
-  return LANG.translate("Hello");
-}
-
-static void main(String... args) {
-  println(greet());
-}
-</code>
-        </pre>
-        <p>It's <strong>untestable</strong> as you can't unit test <code>greet()</code> with different
-languages.  One may argue if <code>LANG</code> is made to be non-final, you can
-change it's value in unit tests in order to test the <code>greet()</code>. This
-basically turns it into a global variable, which is bad on it's own
-levels, introduces concurrency problems, and you wouldn't be able to
-test <code>greet()</code> with different languages <strong>in parallel</strong>.</p>
-        <p>It also puts a <strong>hidden dependency</strong> inside <code>greet()</code> that drives it's
-behavior, not clear to the caller when looking at it's signature. In
-the above example, each time you run the program, <code>greet()</code> may
-produce a different result even though it's called with the same
-parameters (in this example, empty). It makes <code>greet()</code> a bit magical,
-and that's bad, a method's return value should be driven by the input
-parameters, not by magic (There maybe exceptions, but this isn't one
-of them).</p>
-        <p>Mutable constants should really be parameters instead:</p>
-        <pre>
-          <code class="language-java">static String greet(Language lang) {
-  return lang.translate("Hello");
-}
-
-static void main(String... args) {
-  var env = getEnv("LANG");
-  var lang = Language.of(env);
-  println(greet(lang));
-}
-</code>
-        </pre>
-        <p>This makes the code testable, testable in parallel, dependency is
-clear, non-magical.</p>
-        <p>
-          <time itemprop="datePublished" datetime="2019-07-17">2019-07-17</time>
         </p>
       </div>
     </content>

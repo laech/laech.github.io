@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="../../../../default.css" />
+<link rel="alternative" type="application/atom+xml" title="Finding My Cheapest Power Plan" href="../../../../index.xml" />
+<title>Finding My Cheapest Power Plan</title>
+</head>
+
+<body>
+<nav>
+  <ul>
+    <li>
+      <a href="../../../../index.html">index</a>
+    </li>
+    <li>
+      <a href="../../../../index.xml">
+        <img class="feed" src="../../../../feed.png" title="feed" />
+      </a>
+    </li>
+    <li><a href="mailto:laec@proton.me">contact</a></li>
+  </ul>
+</nav>
+  <main>
+    <h1>Finding My Cheapest Power Plan</h1>
+<p>It's been a few years since I last switched power company, so I
+thought it's time to check things out again to see if I can save some
+electricity costs. But I didn't want to just go to each company's
+websites and compare the rates, I want to calculate the rates against
+my actual power usage to get the concrete costs for my specific usage
+pattern.</p>
+<p>I'm currently with Electric Kiwi, and on my account page I can see a
+breakdown of my usages:</p>
+<p><img src="ek-insights.png" alt="Electric Kiwi Insights" /></p>
+<p>To get the raw data behind this is fairly straight forward, with the
+help of the browser's dev tools, I can inspect the request being made,
+then change a few parameters and retrieve all my usage data for the
+whole of 2023. The JSON payload looks something like this:</p>
+<pre><code class="language-json">{
+  &quot;data&quot;: {
+    &quot;usage&quot;: {
+      &quot;2023-12-31&quot;: {
+        &quot;intervals&quot;: {
+          &quot;1&quot;: {
+            &quot;consumption&quot;: &quot;0.17&quot;,
+            &quot;time&quot;: &quot;12:00 AM&quot;,
+            ...
+          },
+          &quot;2&quot;: {
+            &quot;consumption&quot;: &quot;0.10&quot;,
+            &quot;time&quot;: &quot;12:30 AM&quot;
+            ...
+...
+</code></pre>
+<p>It's essentially a list of half hour buckets of the whole of 2023. We
+can extract the bits we want with a little Python:</p>
+<pre><code class="language-python">class HalfHourlyUsage(NamedTuple):
+    start: datetime
+    kwh: Decimal
+
+with open(&quot;half_hourly.json&quot;) as input:
+    data = json.load(input)
+
+half_hourly_usages = [
+    HalfHourlyUsage(
+        datetime.strptime(f&quot;{date} {interval['time']}&quot;, &quot;%Y-%m-%d %I:%M %p&quot;),
+        Decimal(interval[&quot;consumption&quot;]),
+    )
+    for date, usage in data[&quot;data&quot;][&quot;usage&quot;].items()
+    for interval in usage[&quot;intervals&quot;].values()
+]
+</code></pre>
+<p>Which essentially gives us the start time of the half hour, and the
+amount of electricity used for that half hour in kWh:</p>
+<pre><code>2023-12-10 23:00:00, 0.78
+2023-12-10 23:30:00, 1.27
+...
+</code></pre>
+<p>Now with the data in hand, we can go through the power companies and
+calculate their advertised rates against this usage data. For example,
+given a company's low user plan, which has a daily fixed cost of
+$0.69, day rate of $0.3117/kWh, and night rate of $0.1507/kWh, we can
+calculate the total cost like so:</p>
+<pre><code class="language-python">def calculate_cost(
+    usages: list[HalfHourlyUsage],
+    day_rate: Decimal,
+    kwh_rate: Callable[[datetime], Decimal],
+) -&gt; Decimal:
+    days_cost = day_rate * sum(
+        366 if calendar.isleap(year) else 365
+        for year in {usage.start.year for usage in usages}
+    )
+    kwhs_cost = sum([kwh_rate(usage.start) * usage.kwh for usage in usages])
+    return days_cost + kwhs_cost
+
+cost = calculate_cost(
+    half_hourly_usages,
+    day_rate=Decimal(&quot;0.69&quot;),
+    kwh_rate=lambda time: Decimal(&quot;0.3117&quot;)
+    if 7 &lt;= time.hour &lt; 23
+    else Decimal(&quot;0.1507&quot;),
+)
+</code></pre>
+<p>After going through some calculations, here are the list of plans I've
+compared against my usage data for 2023, cost is the total cost for
+year 2023, sorted by lowest first:</p>
+<table>
+<thead>
+<tr>
+<th>Plan</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Electric Kiwi, PowerShifter</td>
+<td>$1,044.93</td>
+</tr>
+<tr>
+<td>Electric Kiwi, Prepay 300</td>
+<td>$1,065.79</td>
+</tr>
+<tr>
+<td>Electric Kiwi, MoveMaster</td>
+<td>$1,208.05</td>
+</tr>
+<tr>
+<td>Contact Energy, Good Nights</td>
+<td>$1,213.87</td>
+</tr>
+<tr>
+<td>Contact Energy, Good Weekends</td>
+<td>$1,263.42</td>
+</tr>
+<tr>
+<td>Flick, Flat</td>
+<td>$1,297.27</td>
+</tr>
+<tr>
+<td>Powershop</td>
+<td>$1,326.64</td>
+</tr>
+<tr>
+<td>Frank Energy</td>
+<td>$1,332.78</td>
+</tr>
+<tr>
+<td>Electric Kiwi, Stay Ahead 200</td>
+<td>$1,354.49</td>
+</tr>
+<tr>
+<td>Flick, Off Peak</td>
+<td>$1,368.08</td>
+</tr>
+<tr>
+<td>Genesis, Energy Basic</td>
+<td>$1,376.88</td>
+</tr>
+<tr>
+<td>Genesis, Energy Plus</td>
+<td>$1,392.48</td>
+</tr>
+<tr>
+<td>Meridian, Simple</td>
+<td>$1,449.76</td>
+</tr>
+<tr>
+<td>Contact Energy, Basic</td>
+<td>$1,461.11</td>
+</tr>
+<tr>
+<td>Electric Kiwi, Kiwi</td>
+<td>$1,471.59</td>
+</tr>
+<tr>
+<td>Contact Energy, Broadband Bundle</td>
+<td>$1,526.30</td>
+</tr>
+</tbody>
+</table>
+<p>My current plan is Electric Kiwi Stay Ahead 200, if I switch to
+PowerShifter, it would be a saving of ~$300 per year, or ~23% cheaper.
+But PowerShifter requires switching broadband to them, I don't want to
+do that, so I'll probably go with Prepay 300 instead.</p>
+    <p>
+      <time itemprop="datePublished" datetime="2024-01-30">2024-01-30</time>
+    </p>
+  </main>
+</body>
+
+</html>
